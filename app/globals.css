@@ -1,3 +1,381 @@
-.hello{
-  color: darkblue;
+.headerdiv{
+  display: block;
+  margin:0 auto;
+  width: 1280px;
+}
+header{
+  width: 1280px;
+}
+.headerbox{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 180px;
+}
+.title{
+  display: flex;
+  font-size: 37px;
+  font-weight: 600;
+  color: #0060F1;
+}
+.login{
+  display: inline-block;
+  flex-grow: 1;
+  font-size: 17px;
+  color: #707070;
+  margin-right: 140px;
+}
+.loginBox{
+  float: right;
+}
+.headerMenu{
+  display: flex;
+  position: relative;
+  margin-left: 135px;
+}
+#headerMenuBox{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.searchBox{
+  flex-grow: 1;
+}
+#headerMenuSearchBox{
+  align-items: center;
+  float: right;
+  height: 26px;
+  width: 200px;
+  margin-top: 10px;
+  margin-right: 135px;
+  border-radius: 30px;
+  background-color: #D9D9D9;
+}
+
+.footer{
+  display: block;
+  background-color: #707070;
+  width: 15000px;
+	height: 50px;
+  top:auto;
+	bottom: 0px;
+  margin:0 auto;
+  position: fixed;
+}
+#footerFont{
+  display: flex;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 200px;
+  color:aliceblue
+}
+.body{
+  display: flex;
+}
+.benner{
+  height: 300px;
+  width: 960px;
+  margin-top: 10px;
+  margin-left: 180px;
+  background-color:#D9D9D9;
+}
+.MainContentBox{
+  height: 350px;
+  width: auto;
+  margin-top: 10px;
+  background-color:#D9D9D9;
+}
+.subTitle{
+  margin-top: 10px;
+  margin-left: 85px;
+  height: 350px;
+}
+.subTitleFont{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 130px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.subTitleFont1{
+  display: inline-block;
+  margin-left: 130px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.subTitleIcon{
+  display: inline-block;
+  position: relative;
+  height: 27px;
+  width: 30px;
+  margin-left: 28px;
+}
+.productCard{
+  display: block;
+  box-sizing: border-box;
+  width: 245px;
+  height: 243px;
+  left: 194px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #969696;
+  border-radius: 10px;
+}
+.productHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.productImg{
+  display: inline-block;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.productTitle{
+  margin-right: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.productSub{
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  margin-top: 17px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.productSubTitle{
+  margin-left: 9px;
+  font-weight: 400;
+  color: #585858;
+}
+.productSubTitle1{
+  color: #585858;
+}
+.productSubMain{
+  margin-right: 16px;
+  margin-bottom: 10px;
+  margin-left: 17px;
+  color: #585858;
+}
+.productSubMainSub{
+  margin-left: 17px;
+  font-size: 13px;
+  color:#969696
+}
+.productMainBox{
+  display: flex;
+  font-size: 18px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.productMain{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.productMainNum{
+  font-size: 60px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #0060F1;
+}
+.productMainNumper{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: #0060F1;
+}
+.productEx{
+  flex-grow: 1;
+  margin-top: 16px;
+}
+.productExNum{
+  margin-left: 12px;
+  font-size: 17px;
+  color: #BAB9B9;
+}
+.productExM{
+  margin-top: 3px;
+  margin-left: 43px;
+  font-size: 15px;
+  color: #BAB9B9;
+}
+.card{
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.loginbody{
+  display: flex;
+  justify-content: center;
+}
+.loginBenner{
+  height: 600px;
+  width: 450px;
+  margin: 30px 120px 0px 0px;
+  background-color: #969696;
+}
+.loginBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.loginContentBox{
+  display: block;
+  margin-left: 20px;
+}
+#loginTitle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 55px;
+  font-weight: 700;
+  color: #0060F1;
+}
+.loginInputBox{
+  display: block;
+  align-items: center;
+}
+input{
+  display: flex;
+  height: 50px;
+  width: 400px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+#loginButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 408px;
+  margin-top: 20px;
+  font-size: 1.8em;
+  font-weight: 600;
+  background-color:#0060F1;
+  color: #ffffff;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0);
+}
+.loginOption{
+  display: flex;
+  width: 408px;
+  justify-content: space-around;
+}
+span{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #969696;
+}
+.signinbox{
+  display: flex;
+  justify-content: center;
+}
+.signinFont{
+  display: block;
+  align-items: center;
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 50px;
+  color:#0060F1
+}
+.signinDiv{
+  display: block;
+  align-items: center;
+  margin-top: 130px;
+  margin-right: 50px;
+}
+.signinForm > div{
+  display: flex;
+}
+.inputId{
+  display: flex;
+  justify-content: space-between;
+} 
+.inputId > p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070; 
+}
+.inputId > input{
+  height: 40px;
+  width: 350px;
+  border-radius: 5px #707070;
+}
+.inputEmail{
+  display: flex;
+  justify-content: space-between;
+} 
+.inputEmail > p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070; 
+}
+.inputEmail > input{
+  height: 40px;
+  width: 350px;
+  border-radius: 5px #707070;
+}
+.inputPw{
+  display: flex;
+  justify-content: space-between;
+} 
+.inputPw > p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070; 
+    float: left;
+}
+.inputPw > input{
+  height: 40px;
+  width: 350px;
+  border-radius: 5px #707070;
+}
+.inputPwc{
+  display: flex;
+  justify-content: space-between;
+} 
+.inputPwc > p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070; 
+}
+.inputPwc > input{
+  height: 40px;
+  width: 350px;
+  margin-left: 10px;
+  border-radius: 5px #707070;
+}
+.IN{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.IN > p{
+  font-size: 20px;
+  font-weight: 600;
+  color:#707070
+}
+.IN > button{
+  height: 20px;
+  width: 20px;
+}
+.signinButton{
+  height: 60px;
+  width: 350px;
+  margin-left: 100px;
+  background-color: #0060F1;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  border: rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }

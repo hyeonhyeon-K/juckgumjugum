@@ -1,8 +1,11 @@
-export default function Main(){
+import HomeCard from "./HomeCard.js"
+import Benner from "./Benner.js"
+
+export default function Home(){
   return(
     <div>
-      <h1 className="hello">HELLO</h1>
-      <h3> I LOVE NEXT.JS</h3>
+      <Benner></Benner>
+      <HomeCard/>
     </div>
   )
 }
