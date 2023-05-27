@@ -61,6 +61,7 @@ export default function deposit3dbox(){
             <button className="deposit3DB1">가입하기</button>
             <button className="deposit3DB1">은행 사이트</button>
         </div>
+        
     </div>
 
     
