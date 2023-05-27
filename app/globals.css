@@ -1,438 +1,673 @@
-
 .headerdiv{
-  display: block;
-  margin:0 auto;
-  width: 1280px;
-}
-header{
-  width: 1280px;
-}
-.headerbox{
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 180px;
-}
-.title{
-  display: flex;
-  font-size: 37px;
-  font-weight: 600;
-  color: #0060F1;
-}
-.login{
-  display: inline-block;
-  flex-grow: 1;
-  font-size: 17px;
-  color: #707070;
-  margin-right: 140px;
-}
-.loginBox{
-  float: right;
-}
-.headerMenu{
-  display: flex;
-  position: relative;
-  margin-left: 135px;
-}
-#headerMenuBox{
-  margin-top: 10px;
-  margin-left: 50px;
-  font-size: 25px;
-  font-weight: 600;
-}
-.searchBox{
-  flex-grow: 1;
-}
-#headerMenuSearchBox{
-  align-items: center;
-  float: right;
-  height: 26px;
-  width: 200px;
-  margin-top: 10px;
-  margin-right: 135px;
-  border-radius: 30px;
-  background-color: #D9D9D9;
-}
-
-.footer{
-  display: block;
-  background-color: #707070;
-  width: 15000px;
-	height: 50px;
-  top:auto;
-	bottom: 0px;
-  margin:0 auto;
-  position: fixed;
-}
-#footerFont{
-  display: flex;
-  font-size: 30px;
-  margin-top: 10px;
-  margin-left: 200px;
-  color:aliceblue
-}
-.body{
-  display: inline-flex;
-  height: 280px;
-}
-.benner{
-  height: 300px;
-  width: 960px;
-  margin-top: 10px;
-  margin-left: 180px;
-  background-color:#D9D9D9;
-}
-.MainContentBox{
-  height: 350px;
-  width: auto;
-  margin-top: 10px;
-  background-color:#D9D9D9;
-}
-.subTitle{
-  margin-left: 85px;
-}
-.subTitleFont{
-  display: inline-block;
-  margin:20px 0px 0px 130px;
-  font-size: 30px;
-  font-weight: 600;
-}
-.subTitleFont1{
-  display: inline-block;
-  margin:20px 0px 0px 130px;
-  font-size: 30px;
-  font-weight: 600;
-}
-.subTitleIcon{
-  display: inline-block;
-  position: relative;
-  height: 27px;
-  width: 30px;
-  margin-left: 28px;
-}
-.productCard{
-  display: block;
-  box-sizing: border-box;
-  width: 245px;
-  height: 243px;
-  left: 194px;
-  margin-top: 20px;
-  background-color: #ffffff;
-  border: 1px solid #969696;
-  border-radius: 10px;
-}
-.productHeader{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-left: 10px;
-  flex-grow: 1;
-}
-.productImg{
-  display: inline-block;
-  border-radius: 50px;
-  margin-left: 10px;
-}
-.productTitle{
-  margin-right: 20px;
-  font-size: 28px;
-  font-weight: 700;
-}
-.productSub{
-  display: flex;
-  justify-content: space-between;
-  font-size: 17px;
-  margin-top: 17px;
-  margin-right: 22px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.productSubTitle{
-  margin-left: 9px;
-  font-weight: 400;
-  color: #585858;
-}
-.productSubTitle1{
-  color: #585858;
-}
-.productSubMain{
-  margin-right: 16px;
-  margin-bottom: 10px;
-  margin-left: 17px;
-  color: #585858;
-}
-.productSubMainSub{
-  margin-left: 17px;
-  font-size: 13px;
-  color:#969696
-}
-.productMainBox{
-  display: flex;
-  font-size: 18px;
-  margin-right: 22px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.productMain{
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-}
-.productMainNum{
-  font-size: 60px;
-  font-weight: 700;
-  margin-left: 10px;
-  color: #0060F1;
-}
-.productMainNumper{
-  font-size: 25px;
-  font-weight: 600;
-  margin-top: 30px;
-  color: #0060F1;
-}
-.productEx{
-  flex-grow: 1;
-  margin-top: 16px;
-}
-.productExNum{
-  margin-left: 12px;
-  font-size: 17px;
-  color: #BAB9B9;
-}
-.productExM{
-  margin-top: 3px;
-  margin-left: 43px;
-  font-size: 15px;
-  color: #BAB9B9;
-}
-.card{
-  margin-left: 30px;
-  display: flex;
-}
-.loginbody{
-  display: flex;
-  justify-content: center;
-}
-.loginBenner{
-  height: 600px;
-  width: 450px;
-  margin: 30px 120px 0px 0px;
-  background-color: #969696;
-}
-.loginBox{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.loginContentBox{
-  display: block;
-  margin-left: 20px;
-}
-#loginTitle{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  font-size: 55px;
-  font-weight: 700;
-  color: #0060F1;
-}
-.loginInputBox{
-  display: block;
-  align-items: center;
-}
-input{
-  display: flex;
-  height: 50px;
-  width: 400px;
-  margin-top: 20px;
-  font-size: 25px;
-}
-#loginButton{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 408px;
-  margin-top: 20px;
-  font-size: 1.8em;
-  font-weight: 600;
-  background-color:#0060F1;
-  color: #ffffff;
-  border-radius: 5px;
-  border-color: rgba(0, 0, 0, 0);
-}
-.loginOption{
-  display: flex;
-  width: 408px;
-  justify-content: space-around;
-}
-span{
-  margin-top: 20px;
-  font-size: 20px;
-  color: #969696;
-}
-.signinbox{
-  display: flex;
-  justify-content: center;
-}
-.signinFont{
-  display: block;
-  align-items: center;
-  position: absolute;
-  font-size: 60px;
-  font-weight: 700;
-  margin-top: 50px;
-  color:#0060F1
-}
-.signinDiv{
-  display: block;
-  align-items: center;
-  margin-top: 130px;
-  margin-right: 50px;
-}
-.signinForm > div{
-  display: flex;
-}
-.inputId{
-  display: flex;
-  justify-content: space-between;
-} 
-.inputId > p{
+    display: block;
+    margin:0 auto;
+    width: 1280px;
+  }
+  header{
+    width: 1280px;
+  }
+  .headerbox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 180px;
+  }
+  .title{
+    display: flex;
+    font-size: 37px;
+    font-weight: 600;
+    color: #0060F1;
+  }
+  .login{
+    display: inline-block;
+    flex-grow: 1;
+    font-size: 17px;
+    color: #707070;
+    margin-right: 140px;
+  }
+  .loginBox{
+    float: right;
+  }
+  .headerMenu{
+    display: flex;
+    position: relative;
+    margin-left: 135px;
+  }
+  #headerMenuBox{
+    margin-top: 10px;
+    margin-left: 50px;
     font-size: 25px;
     font-weight: 600;
-    color: #707070; 
-}
-.inputId > input{
-  height: 40px;
-  width: 350px;
-  border-radius: 5px #707070;
-}
-.inputEmail{
-  display: flex;
-  justify-content: space-between;
-} 
-.inputEmail > p {
+  }
+  .searchBox{
+    flex-grow: 1;
+  }
+  #headerMenuSearchBox{
+    align-items: center;
+    float: right;
+    height: 26px;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 135px;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+  }
+  
+  .footer{
+    display: block;
+    background-color: #707070;
+    width: 15000px;
+      height: 50px;
+    top:auto;
+      bottom: 0px;
+    margin:0 auto;
+    position: fixed;
+  }
+  #footerFont{
+    display: flex;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 200px;
+    color:aliceblue
+  }
+  .body{
+    display: inline-flex;
+    height: 280px;
+  }
+  .benner{
+    height: 300px;
+    width: 960px;
+    margin-top: 10px;
+    margin-left: 180px;
+    background-color:#D9D9D9;
+  }
+  .MainContentBox{
+    height: 350px;
+    width: auto;
+    margin-top: 10px;
+    background-color:#D9D9D9;
+  }
+  .subTitle{
+    margin-left: 85px;
+  }
+  .subTitleFont{
+    display: inline-block;
+    margin:20px 0px 0px 130px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .subTitleFont1{
+    display: inline-block;
+    margin:20px 0px 0px 130px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .subTitleIcon{
+    display: inline-block;
+    position: relative;
+    height: 27px;
+    width: 30px;
+    margin-left: 28px;
+  }
+  .productCard{
+    display: block;
+    box-sizing: border-box;
+    width: 245px;
+    height: 243px;
+    left: 194px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #969696;
+    border-radius: 10px;
+  }
+  .productHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  .productImg{
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+  .productTitle{
+    margin-right: 20px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .productSub{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-top: 17px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .productSubTitle{
+    margin-left: 9px;
+    font-weight: 400;
+    color: #585858;
+  }
+  .productSubTitle1{
+    color: #585858;
+  }
+  .productSubMain{
+    margin-right: 16px;
+    margin-bottom: 10px;
+    margin-left: 17px;
+    color: #585858;
+  }
+  .productSubMainSub{
+    margin-left: 17px;
+    font-size: 13px;
+    color:#969696
+  }
+  .productMainBox{
+    display: flex;
+    font-size: 18px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .productMain{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+  .productMainNum{
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #0060F1;
+  }
+  .productMainNumper{
     font-size: 25px;
     font-weight: 600;
-    color: #707070; 
-}
-.inputEmail > input{
-  height: 40px;
-  width: 350px;
-  border-radius: 5px #707070;
-}
-.inputPw{
-  display: flex;
-  justify-content: space-between;
-} 
-.inputPw > p{
+    margin-top: 30px;
+    color: #0060F1;
+  }
+  .productEx{
+    flex-grow: 1;
+    margin-top: 16px;
+  }
+  .productExNum{
+    margin-left: 12px;
+    font-size: 17px;
+    color: #BAB9B9;
+  }
+  .productExM{
+    margin-top: 3px;
+    margin-left: 43px;
+    font-size: 15px;
+    color: #BAB9B9;
+  }
+  .card{
+    margin-left: 30px;
+    display: flex;
+  }
+  .loginbody{
+    display: flex;
+    justify-content: center;
+  }
+  .loginBenner{
+    height: 600px;
+    width: 450px;
+    margin: 30px 120px 0px 0px;
+    background-color: #969696;
+  }
+  .loginBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .loginContentBox{
+    display: block;
+    margin-left: 20px;
+  }
+  #loginTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 55px;
+    font-weight: 700;
+    color: #0060F1;
+  }
+  .loginInputBox{
+    display: block;
+    align-items: center;
+  }
+  input{
+    display: flex;
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
     font-size: 25px;
+  }
+  #loginButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 408px;
+    margin-top: 20px;
+    font-size: 1.8em;
     font-weight: 600;
-    color: #707070; 
-    float: left;
-}
-.inputPw > input{
-  height: 40px;
-  width: 350px;
-  border-radius: 5px #707070;
-}
-.inputPwc{
-  display: flex;
-  justify-content: space-between;
-} 
-.inputPwc > p{
+    background-color:#0060F1;
+    color: #ffffff;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+  }
+  .loginOption{
+    display: flex;
+    width: 408px;
+    justify-content: space-around;
+  }
+  span{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #969696;
+  }
+  .signinbox{
+    display: flex;
+    justify-content: center;
+  }
+  .signinFont{
+    display: block;
+    align-items: center;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 50px;
+    color:#0060F1
+  }
+  .signinDiv{
+    display: block;
+    align-items: center;
+    margin-top: 130px;
+    margin-right: 50px;
+  }
+  .signinForm > div{
+    display: flex;
+  }
+  .inputId{
+    display: flex;
+    justify-content: space-between;
+  } 
+  .inputId > p{
+      font-size: 25px;
+      font-weight: 600;
+      color: #707070; 
+  }
+  .inputId > input{
+    height: 40px;
+    width: 350px;
+    border-radius: 5px #707070;
+  }
+  .inputEmail{
+    display: flex;
+    justify-content: space-between;
+  } 
+  .inputEmail > p {
+      font-size: 25px;
+      font-weight: 600;
+      color: #707070; 
+  }
+  .inputEmail > input{
+    height: 40px;
+    width: 350px;
+    border-radius: 5px #707070;
+  }
+  .inputPw{
+    display: flex;
+    justify-content: space-between;
+  } 
+  .inputPw > p{
+      font-size: 25px;
+      font-weight: 600;
+      color: #707070; 
+      float: left;
+  }
+  .inputPw > input{
+    height: 40px;
+    width: 350px;
+    border-radius: 5px #707070;
+  }
+  .inputPwc{
+    display: flex;
+    justify-content: space-between;
+  } 
+  .inputPwc > p{
+      font-size: 25px;
+      font-weight: 600;
+      color: #707070; 
+  }
+  .inputPwc > input{
+    height: 40px;
+    width: 350px;
+    margin-left: 10px;
+    border-radius: 5px #707070;
+  }
+  .IN{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .IN > p{
+    font-size: 20px;
+    font-weight: 600;
+    color:#707070
+  }
+  .IN > button{
+    height: 20px;
+    width: 20px;
+  }
+  .signinButton{
+    height: 60px;
+    width: 350px;
+    margin-left: 100px;
+    background-color: #0060F1;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    border: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+  }
+  .depositBody{
+    display: flex;
+    margin: 0px 0px 0px 70px;
+    height: 280px;
+  }
+  .expalnebox{
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 980px;
+    margin-top: 20px;
+    margin-left: 170px;
+    border-radius: 20px;
+    background-color: #2649FF;
+  }
+  #explaneTitle{
+    display: inline-flex;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px 0px 0px 40px;
+    color: #FFE500;
+  }
+  #explaneContent{
+    display: inline-flex;
+    width: 850px;
     font-size: 25px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 15px 0px 0px 40px;
+    color: #FFFFFF;
+  }
+  
+  .dayDepositBox{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 10px 160px;
+    font-size: 33px;
     font-weight: 600;
-    color: #707070; 
-}
-.inputPwc > input{
-  height: 40px;
-  width: 350px;
-  margin-left: 10px;
-  border-radius: 5px #707070;
-}
-.IN{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.IN > p{
-  font-size: 20px;
-  font-weight: 600;
-  color:#707070
-}
-.IN > button{
-  height: 20px;
-  width: 20px;
-}
-.signinButton{
-  height: 60px;
-  width: 350px;
-  margin-left: 100px;
-  background-color: #0060F1;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  border: rgba(0, 0, 0, 0);
-  border-radius: 5px;
-}
-.depositBody{
-  display: flex;
-  margin: 0px 0px 0px 70px;
-  height: 280px;
-}
-.expalnebox{
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  width: 1000px;
-  margin-top: 20px;
-  margin-left: 150px;
-  border-radius: 10px;
-  background-color: #2649FF;
-}
-#explaneTitle{
-  display: inline-flex;
-  font-size: 50px;
-  font-weight: 600;
-  margin: 30px 0px 0px 40px;
-  color: #FFE500;
-}
-#explaneContent{
-  display: inline-flex;
-  width: 850px;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 33px;
-  margin: 15px 0px 0px 40px;
-  color: #FFFFFF;
-}
-
-.dayDepositBox{
-  display: flex;
-  align-items: center;
-  margin: 30px 0px 10px 160px;
-  font-size: 33px;
-  font-weight: 600;
-}
-.cardSub{
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.explanbody{
-  display: flex;
-}
-.explaneSubTitle{
-  height: 280px;
-  margin-left: 20px;
-}
-.depositBox1{
-  display: flex;
-}
-.depositBox2{
-  display: flex;
-  margin-left: 100px;
-}
-
+  }
+  .cardSub{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .explanbody{
+    display: flex;
+  }
+  .explaneSubTitle{
+    height: 280px;
+    margin-left: 20px;
+  }
+  .depositBox1{
+    display: flex;
+  }
+  .depositBox2{
+    display: flex;
+    margin-left: 100px;
+  }
+  .depositdetailbox{
+    display: flex;
+    margin: 30px 0px 0px 200px;
+  }
+  .depositdetailboxS{
+      display: flex;
+      width: 650px;
+      height: 130px;
+      padding:10px;
+      border: solid 1px #969696;
+      border-radius: 10px;
+  }
+  .depositdetailboxS1{
+      margin-left: 20px;
+  }
+  .ddbs2{
+      display: flex;
+  }
+  .ddInfTitle{
+      color:#969696;
+      font-size: 10px; 
+  }
+  .ddInfNum{
+      color: #3152FF;
+      font-size: 50px;
+      font-weight: 700;
+  }
+  .ddInfper{
+      color: #3152FF;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 25px 0px 0px 5px
+  }
+  .depositdetailcontent{
+      display: flex;
+      flex-direction: column;
+      margin: 0px 0px 0px 15px
+  }
+  .ddcontentbuttonB{
+      display: flex;
+  }
+  .ddI{
+      border-radius: 60px;
+  }
+  .ddcontentTag{
+      height: 21px;
+      width: 108px;
+      font-size: 15px;
+      font-weight: 400;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 15px;
+      background-color: #0060F1;
+      color:#ffffff;
+  }
+  .ddcontentTag1{
+      height: 21px;
+      width: 108px;
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 15px;
+      background-color: #0060F1;
+      color:#ffffff;
+  }
+  .ddcontentTitle{
+      font-size: 30px;
+      font-weight: 600;
+  }
+  .ddcontentC{
+      margin-top: 5px;
+      font-size: 20px;
+      color: #585858;
+  }
+  .ddcontentInfbox{
+      display: flex;
+      color: #BAB9B9;
+      margin: 18px 0px 0px 20px;
+      font-size: 17px;
+  }
+  
+  .depositdetailbuttonbox{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 50px;
+  }
+  .depositdetailbuttonbox > button{
+      height: 41px;
+      width: 158px;
+      font-size: 22px;
+      font-weight: 600;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      background-color: #2649FF;
+      color:#ffffff;
+  }
+  .deposit3dbox{
+      height: 700px;
+      width: 950px;
+      margin: 30px 0px 0px 180px;
+      border: solid 1px #969696;
+      border-radius: 15px;
+  }
+  .deposit3dImgbox{
+      display: flex;
+  }
+  
+  .deposit3dimg{
+      margin: 40px 0px 0px 30px;
+      border-radius: 100px;
+  }
+  .deposit3dBox1{
+      display: flex;
+      margin: 0px 0px 0px 40px;
+  }
+  .deposit3dBox2{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 0px 0px 70px;
+  }
+  .d3d{
+      display: flex;
+  }
+  .deposit3dButton{
+      display: block;
+      height: 40px;
+      width: 157px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #FFFFFF;
+      background-color: #2649FF;
+      border-radius: 10px;
+      border: solid 1px rgba(0, 0, 0, 0);
+  }
+  .deposit3dButton1{
+      display: block;
+      height: 40px;
+      width: 157px;
+      margin-left: 30px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #FFFFFF;
+      background-color: #2649FF;
+      border-radius: 10px;
+      border: solid 1px rgba(0, 0, 0, 0);
+  }
+  .d3dB{
+      display: flex;
+      margin-top: 13px;
+  }
+  .d3dBT{
+      font-size: 45px;
+      font-weight: 600;
+      margin-top: 10px;
+  }
+  .d3dBTd{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px 0px 10px
+  }
+  .d3dBTdT{
+      display: flex;
+      margin-left: 45px;
+      font-size: 65px;
+      font-weight: 700;
+      color: #2649FF;
+  }
+  .d3dBTdT1{
+      font-size: 10px;
+  }
+  .d3dBTdT2{
+      font-size: 40px;
+      font-weight: 500;
+      color: #2649FF;
+  }
+  .d3dBTI{
+      margin: 20px 0px 0px 30px;
+      color: #969696;
+  }
+  .d3dBTID{
+      margin-left: 12px;
+      font-size: 13px;
+  }
+  .d3dbD{
+      width: 550px;
+      font-size: 30px;
+      color: #585858;
+  }
+  .deposit3dID{
+      margin: 30px 0px 0px 30px;
+  }
+  .deposit3dIDT{
+      font-size: 35px;
+      font-weight: 400;
+  }
+  .deposit3dIDC{
+      width: 730px;
+      margin: 20px 0px 0px 70px;
+      font-size: 30px;
+      color: #585858;
+  }
+  .deposit3dII{
+      width: 730px;
+      margin: 20px 0px 0px 110px;
+      font-size: 20px;
+      color: #969696;
+      letter-spacing: 1px;
+      line-height:30px;
+  }
+  .deposit3DBB{
+      display: flex;
+      margin: 20px 0px 0px 600px;
+  }
+  .deposit3DB{
+      display: block;
+      height: 40px;
+      width: 157px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FFFFFF;
+      background-color: #2649FF;
+      border-radius: 10px;
+      border: solid 1px rgba(0, 0, 0, 0);
+  }
+  .deposit3DB1{
+      display: block;
+      height: 40px;
+      width: 157px;
+      margin-left: 30px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FFFFFF;
+      background-color: #2649FF;
+      border-radius: 10px;
+      border: solid 1px rgba(0, 0, 0, 0);
+  }
