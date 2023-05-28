@@ -27,7 +27,7 @@ export default function DepositDetail(){
                     </div>
                         <div className='ddcontentInfbox'>
                             <div>기본 2.45%</div>
-                            <div>(24개월)</div>
+                            <div className='ddcontentInfboxSub'>(24개월)</div>
                         </div>
                 </div>
             </div>
