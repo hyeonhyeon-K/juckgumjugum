@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-
+import { Providers } from "../redux/provider";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -33,7 +33,7 @@ export default function header({children}){
             </div>
         </div>
     </header>
-    {children}
+        <Providers>{children}</Providers>
     <footer>
       <div>
         <div className='footer'>
@@ -41,6 +41,7 @@ export default function header({children}){
         </div>
       </div>
     </footer>
+    
     </body>
     </html>
   )

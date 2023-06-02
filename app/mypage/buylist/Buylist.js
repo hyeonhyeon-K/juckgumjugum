@@ -23,7 +23,7 @@ export default function Mypage(){
                         </div>
                     <div className="mypageSidebarC">
                         <FaShoppingBasket id="mypageIcon"/>
-                            장바구니
+                        내 적금 목록
                         </div>
                 </div>
                 <div>
