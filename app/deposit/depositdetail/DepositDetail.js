@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import cukmin from "./../../../public/cukmin.png"
+import Link from 'next/link'
 
 export default function DepositDetail(){
   return(
@@ -32,9 +33,9 @@ export default function DepositDetail(){
                 </div>
             </div>
             <div className='depositdetailbuttonbox'>
-                <button>장바구니</button>
-                <button>가입하기</button>
-                <button>은행사이트</button>
+                <Link href={'/shoplist'} ><button className='links'>장바구니 추가</button></Link>
+                <Link href={'/mypage/buylist'}  className='links'><button>가입하기</button></Link>
+                <Link href={'https://www.kbstar.com/'}  className='links'><button>은행사이트</button></Link>
             </div>
     </div>
 

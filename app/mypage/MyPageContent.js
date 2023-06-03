@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { FaRegBell, FaRegUser, FaShoppingBasket } from "react-icons/fa";
 
 export default function Mypage(){
@@ -34,7 +35,8 @@ export default function Mypage(){
                     <input placeholder=" jukgeum@naver.com"></input>
                     <input placeholder=" ******"></input>
                     <input placeholder=" ******"></input>
-                    <button>변경하기</button>
+                    <Link href={'/'}><button className="mypageInputButton">변경하기</button></Link>
+                    
                 </form>
             </div>
         </div>
