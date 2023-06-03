@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import cukmin from "../../../../public/cukmin.png"
+import Link from "next/link"
 
 export default function deposit3dbox(){
   return(
@@ -57,9 +58,9 @@ export default function deposit3dbox(){
             </p>
         </div>
         <div className="deposit3DBB">
-            <button className="deposit3DB">장바구니</button>
-            <button className="deposit3DB1">가입하기</button>
-            <button className="deposit3DB1">은행 사이트</button>
+            <Link href={'/shoplist'}><button className="deposit3DB">장바구니</button></Link>
+            <Link href={'/mypage/buylist'}><button className="deposit3DB1">가입하기</button></Link>
+            <Link href={'https://www.kbstar.com/'}><button className="deposit3DB1">은행 사이트</button></Link>
         </div>
         
     </div>

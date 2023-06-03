@@ -1,3 +1,6 @@
+.links{
+  text-decoration: none;
+}
 .headerdiv{
     display: block;
     margin:0 auto;
@@ -91,12 +94,6 @@
     margin-left: 85px;
   }
   .subTitleFont{
-    display: inline-block;
-    margin:20px 0px 0px 130px;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .subTitleFont1{
     display: inline-block;
     margin:20px 0px 0px 130px;
     font-size: 30px;
@@ -429,10 +426,15 @@
   }
   .depositBox1{
     display: flex;
+    margin-top: 10px;
+    text-decoration: none;
   }
   .depositBox2{
     display: flex;
     margin-left: 100px;
+  }
+  #deosit{
+    text-decoration: none;
   }
   .depositdetailbox{
     display: flex;
@@ -527,11 +529,12 @@
       justify-content: space-around;
       margin-left: 50px;
   }
-  .depositdetailbuttonbox > button{
+  #depositdetailbuttonboxLink{
       height: 41px;
       width: 158px;
       font-size: 22px;
       font-weight: 600;
+      text-decoration: none;
       border-color: rgba(0, 0, 0, 0);
       border-radius: 5px;
       background-color: #2649FF;
@@ -844,7 +847,7 @@
   border: double #585858;
   border-radius: 5px;
 }
-.mypageInput > button{
+.mypageInputButton{
   height: 55px;
   width: 350px;
   margin: 30px 0px 0px 0px ;

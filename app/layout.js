@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Providers } from "../redux/provider";
+import Header from "./Header"
+import Footer from './Footer';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -12,36 +14,13 @@ export const metadata = {
 export default function header({children}){
   return(
     <html lang="en">
-    <body className='headerdiv'>
-    <header>
-      <div className='headerbox'>
-      <div className='title'>적금 저금 </div>
-        <div className='login'>
-          <div className='loginBox'>
-            로그인
-            회원가입
-          </div>
-        </div>
-      </div> 
-        <div className='headerMenu'>
-          <div id='headerMenuBox'>홈</div>
-          <div id='headerMenuBox'>적금</div>
-          <div id='headerMenuBox'>예금</div>
-          <div id='headerMenuBox'>소개</div>  
-            <div className='searchBox'>
-              <div id='headerMenuSearchBox'></div>
-            </div>
-        </div>
-    </header>
-        <Providers>{children}</Providers>
-    <footer>
-      <div>
-        <div className='footer'>
-          <div id='footerFont'>홈</div>
-        </div>
+    <body >
+      <div className='headerdiv'>
+        <Header/>
+          <Providers>{children}</Providers>
+        
       </div>
-    </footer>
-    
+    <Footer/>
     </body>
     </html>
   )

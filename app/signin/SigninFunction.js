@@ -1,6 +1,10 @@
 'use client'
 
+import { useRouter } from "next/navigation";
+
 export default function SigninFunction(){
+    
+    const router = useRouter()
     return(
         <div className="headerdiv">
             <div className="signinbox">
@@ -29,7 +33,7 @@ export default function SigninFunction(){
                             <p>알림동의</p>
                             <button></button>
                         </div>
-                        <button className="signinButton">가입하기</button>
+                        <button className="signinButton" onClick={()=>{router.push('/') }}>가입하기</button>
                     </form>
                 </div>
             </div>
