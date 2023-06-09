@@ -1,5 +1,6 @@
 'use client'
 import { FaRegBell, FaRegUser, FaShoppingBasket } from "react-icons/fa";
+import React from "react";
 import Image from 'next/image'
 import cukmin from "./../../../public/cukmin.png"
 

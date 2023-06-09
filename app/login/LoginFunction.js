@@ -15,7 +15,6 @@ export default function LoginFunction(){
                             <input placeholder=" PW"></input>
                             <Link href={'/'} className='links'><button id="loginButton">로그인</button></Link>
                         </from>
-                        
                         <div className="loginOption">
                             <Link href={'/'} className='links'><span >게스트 로그인</span></Link>
                             
