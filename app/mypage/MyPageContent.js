@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { FaRegBell, FaRegUser, FaShoppingBasket } from "react-icons/fa";
+import React from "react";
 
 export default function Mypage(){
   return(
