@@ -1,8 +1,9 @@
 'use client'
 
-import { FaAngleRight } from "react-icons/fa";
+// import { FaAngleRight } from "react-icons/fa";
 import DepositBenner from "./DepositBenner"
 import DepositDetail from "./DepositDetail"
+import React from "react"
 
 export default function depostidetail(){
     return(

@@ -3,7 +3,7 @@ export const userApi = createApi({
     reducerPath: "userApi",
     refetchOnFocus: true,
     baseQuery: fetchBaseQuery({
-        baseUrl: "https://jsonplaceholder.typicode.com/",
+        baseUrl: 'mongodb+srv://jklgus08:kim123@jaeheyon.oyquwtr.mongodb.net/',
     }),
     endpoints: (builder) => ({
         getUsers: builder.query({

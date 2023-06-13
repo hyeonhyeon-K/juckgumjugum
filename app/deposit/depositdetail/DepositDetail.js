@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import cukmin from "./../../../public/cukmin.png"
 import Link from 'next/link'
+import React from "react"
 
 export default function DepositDetail(){
   return(

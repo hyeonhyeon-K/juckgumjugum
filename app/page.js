@@ -3,6 +3,7 @@
 import { connectDB } from "./util/database.js"
 import HomeCard from "./HomeCard.js"
 import Benner from "./Benner.js"
+import React from "react"
 
 export default async function Home(){
   

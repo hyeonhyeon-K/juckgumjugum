@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import cukmin from "../../public/cukmin.png"
+import React from "react"
 
 export default function Homecard(){
   return(

@@ -1,8 +1,9 @@
 'use client'
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+import React from "react"
 
 export default function Expalne(){
-  const a = useSelector((state) => state.counter.a);
+  // const a = useSelector((state) => state.counter.a);
 
   return(
     <div className="explanbody">
