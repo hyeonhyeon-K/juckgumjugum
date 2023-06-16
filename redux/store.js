@@ -1,27 +1,28 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { configureStore } from "@reduxjs/toolkit";
 
-const counterSlice = createSlice({
-  name: "counter",
-  initialState: {
-    value: 0,
-    a: "Next.js 에서 Redux 사용하기!", // 변수 a의 초기값 설정
-  },
-  reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-  },
+export const userApi = createApi({
+  reducerPath: "userApi",
+  refetchOnFocus: true,
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://finlife.fss.or.kr/finlifeapi/depositProductsSearch.json?auth=855905c0fb40765d5f0ee1cf2746ce6c&topFinGrpNo=020000&pageNo=1',
+  }),
+  endpoints: (builder) => ({
+    getUsers: builder.query({
+      query: () => "users",
+    }),
+    getUserById: builder.query({
+      query: ({ id }) => `users/${id}`,
+    }),
+  }),
 });
 
-export const { increment, decrement } = counterSlice.actions;
-
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    counter: counterSlice.reducer,
+    [userApi.reducerPath]: userApi.reducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(userApi.middleware),
   devTools: process.env.NODE_ENV !== "production",
 });
 

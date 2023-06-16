@@ -34,9 +34,9 @@ export default function DepositDetail(){
                 </div>
             </div>
             <div className='depositdetailbuttonbox'>
-                <Link href={'/shoplist'} ><button className='links'>장바구니 추가</button></Link>
-                <Link href={'/mypage/buylist'}  className='links'><button>가입하기</button></Link>
-                <Link href={'https://www.kbstar.com/'}  className='links'><button>은행사이트</button></Link>
+                <Link href={'/shoplist'} ><button id='depositdetailbuttonboxLink'>장바구니 추가</button></Link>
+                <Link href={'/mypage/buylist'} ><button id='depositdetailbuttonboxLink'>가입하기</button></Link>
+                <Link href={'https://www.kbstar.com/'} ><button id='depositdetailbuttonboxLink'>은행사이트</button></Link>
             </div>
     </div>
 

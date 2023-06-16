@@ -3,7 +3,7 @@ export const userApi = createApi({
     reducerPath: "userApi",
     refetchOnFocus: true,
     baseQuery: fetchBaseQuery({
-        baseUrl: 'mongodb+srv://jklgus08:kim123@jaeheyon.oyquwtr.mongodb.net/',
+        baseUrl: "https://finlife.fss.or.kr/finlifeapi/depositProductsSearch.json?auth=855905c0fb40765d5f0ee1cf2746ce6c&topFinGrpNo=020000&pageNo=1",
     }),
     endpoints: (builder) => ({
         getUsers: builder.query({

@@ -2,7 +2,7 @@ import './globals.css'
 // import { Inter } from 'next/font/google'
 import { Providers } from "../redux/provider";
 import Header from "./Header"
-import Footer from './Footer';
+// import Footer from './Footer';
 import React from "react"
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +21,7 @@ export default function header({children}){
           <Providers>{children}</Providers>
         
       </div>
-    <Footer/>
+    {/* <Footer/> */}
     </body>
     </html>
   )
