@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import Link from "next/link"
 // import Link from "next/link"
 
 export default function Create(){
@@ -42,7 +43,9 @@ export default function Create(){
                 </div>
                 <div className="memberCare">고객 주의사항</div>
                 <input className="createInputCare"></input>
-                <button className="createButton">상품등록하기</button>
+                <Link href={'/'}>
+                    <button className="createButton">상품등록하기</button>
+                </Link>
             </form>
         </div>
     )
