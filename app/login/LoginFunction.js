@@ -1,8 +1,11 @@
 'use client'
-import { useRouter } from "next/navigation";
+
 import Link from "next/link";
+import React from "react"
+
+
 export default function LoginFunction(){
-    const router = useRouter()
+
     return(
         <div className="headerdiv">
             <div className="loginbody">

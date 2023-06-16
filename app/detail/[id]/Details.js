@@ -1,15 +1,18 @@
 'use client'
-
+import React from "react"
 import Image from "next/image"
-import cukmin from "../../../../public/cukmin.png"
+import cukmin from "../../../public/cukmin.png"
 import Link from "next/link"
 
-export default function deposit3dbox(){
+
+export default function details(result){
+
+    console.log(result)
   return(
     <div>
         <div className="explanbody">
             <div className="expalnebox">
-                <p id="explaneTitle">희망 예금</p>
+                <p id="explaneTitle">{result.title}</p>
                 <p id="explaneContent">
                 기쁜 날마다, 고금리의 즐거움을 드립니다.  언제든지 찾을 수 있고 찾을 땐 언제나 높은 금리의 즐거움과 미래의 희망을 누릴 수 있는 정기 예금입니다.
                 </p>

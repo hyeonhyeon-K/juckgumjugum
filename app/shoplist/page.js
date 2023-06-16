@@ -1,5 +1,6 @@
 import ShopList from "./ShopList"
 import Link from 'next/link'
+import React from "react"
 
 export default function shopList(){
     return(

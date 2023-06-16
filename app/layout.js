@@ -1,9 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import { Providers } from "../redux/provider";
 import Header from "./Header"
-import Footer from './Footer';
-const inter = Inter({ subsets: ['latin'] })
+// import Footer from './Footer';
+import React from "react"
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -20,7 +21,7 @@ export default function header({children}){
           <Providers>{children}</Providers>
         
       </div>
-    <Footer/>
+    {/* <Footer/> */}
     </body>
     </html>
   )
