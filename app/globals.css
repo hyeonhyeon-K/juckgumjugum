@@ -30,6 +30,7 @@
   }
   .loginBox{
     float: right;
+    margin-left: 10px;
   }
   .headerMenu{
     display: flex;
@@ -470,6 +471,7 @@
   }
   .ddbs2{
       display: flex;
+      margin-left: -10px;
   }
   .ddInfTitle{
       color:#969696;
@@ -490,7 +492,7 @@
   .depositdetailcontent{
       display: flex;
       flex-direction: column;
-      margin: 0px 0px 0px 15px
+      margin: 0px 0px 0px 26px
   }
   .ddcontentbuttonB{
       display: flex;
@@ -1170,4 +1172,10 @@
   text-decoration: none;
   display: flex;
   color: #000;
+}
+.text-decorationw{
+  text-decoration: none;
+  display: flex;
+  color: #FFFFFF;
+  font-weight: 400;
 }

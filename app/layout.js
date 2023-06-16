@@ -1,9 +1,14 @@
 import './globals.css'
 // import { Inter } from 'next/font/google'
 import { Providers } from "../redux/provider";
-import Header from "./Header"
-// import Footer from './Footer';
+import { authOptions } from "@/pages/api/auth/[...nextauth]"
+import { getServerSession } from "next-auth"
 import React from "react"
+import Header from "./Header"
+import SingInHeader from "./SingInHeader"
+
+
+// import Footer from './Footer';
 // const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -12,14 +17,18 @@ export const metadata = {
 }
 
 
-export default function header({children}){
+
+export default async function header({children}){
+  let session =await getServerSession(authOptions)
+  console.log(session)
+
   return(
     <html lang="en">
     <body >
       <div className='headerdiv'>
-        <Header/>
+        { session ?<SingInHeader/>  :<Header/> }
           <Providers>{children}</Providers>
-        
+
       </div>
     {/* <Footer/> */}
     </body>
