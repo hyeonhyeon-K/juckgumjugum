@@ -1,17 +1,18 @@
-'use client'
 
-// import { FaAngleRight } from "react-icons/fa";
+import { connectDB } from "../../util/database.js"
 import DepositBenner from "./DepositBenner"
 import DepositDetail from "./DepositDetail"
 import React from "react"
 
-export default function depostidetail(){
+
+export default async function depostidetail(){
+    const db = (await connectDB).db('jukgum');
+    const result = await db.collection('get').find().toArray();
+
     return(
         <div>
             <DepositBenner/>
-            <DepositDetail/>
-            <DepositDetail/>
-            <DepositDetail/>
+            <DepositDetail result ={result}/>
         </div>
     )
 }

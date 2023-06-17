@@ -21,9 +21,12 @@ export default function Mypage(){
                             회원정보 변경
                         </div>
                     <div className="mypageSidebarC">
+                        <Link href={'/mypage/buylist'} className="text-decorationw">
                         <FaShoppingBasket id="mypageIcon"/>
                         내 적금 목록
+                        </Link>
                         </div>
+                        
                 </div>
                 <div className="mypageInputName">
                     <div className="mypageInputNameId">아이디</div>

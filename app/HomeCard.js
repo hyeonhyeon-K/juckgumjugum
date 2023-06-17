@@ -24,7 +24,6 @@ export default function Home(result){
   const datamap = data.map((a,i) => (
 <div className="body" key={a}>
       <div className="MainContentBox" />
-      {console.log(data)}
       <div className="subTitle">
         {/* 여기서부터 map */}
         <div onClick={()=>{router.push(`/detail/${data[i]._id}`) }}>
