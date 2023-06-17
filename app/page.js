@@ -1,5 +1,6 @@
 
-
+import { authOptions } from "../pages/api/auth/[...nextauth]"
+import { getServerSession } from "next-auth"
 import { connectDB } from "./util/database.js"
 import { FaAngleRight } from "react-icons/fa";
 import HomeCard from "./HomeCard.js"
@@ -12,6 +13,9 @@ export default async function Home(){
   const db = (await connectDB).db('jukgum');
   let result = await db.collection('get').find().toArray();
 
+  let sessions = await getServerSession(authOptions)
+console.log(sessions)
+console.log('a')
   return(
     <div>
       <Benner></Benner>
@@ -22,7 +26,7 @@ export default async function Home(){
         </Link>
       </div>
       <div className="mainBox">
-        <HomeCard result={result}/>
+        <HomeCard result={result} sessions={sessions} />
       </div>
             
     </div>
