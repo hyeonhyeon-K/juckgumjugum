@@ -12,7 +12,7 @@ export default function Homecard(props) {
   return(
     <div className='depositBoxss'>
       {
-      result.map((a,i)=>(
+      result.slice(0, 3).map((a,i)=>(
         <div className="depositBox1" key={a}>
           <div className="depositBox2"></div>
           <div className="depositBody" >
@@ -25,20 +25,19 @@ export default function Homecard(props) {
               <Link href={`detail/${resultFF[i]}`} className='text-decoration'><div className="productTitle">{a.title}</div></Link>
             </div>
             <div className="productSub">
-              <div className="productSubTitle">[목돈모으기]</div>
+              <div className="productSubTitle">[{a.tag}]</div>
               <div className="productSubTitle1"> 내일 희망형 </div>
             </div>
-            <div className="productSubMain">
-              희망찬 내일을 위해 희망찬 미래를 위해 희망의 우리를 위해</div>
+            <div className="productSubMain">{a.content}</div>
             <div className="productSubMainSub">최고 연</div>
             <div className="productMainBox">
               <div className="productMain">
-                <div className="productMainNum">4.2</div>
+                <div className="productMainNum">{a.high}</div>
                 <div className="productMainNumper">%</div>
               </div>
               <div className="productEx">
                 <div className="productExNum">기본 2.45 %</div>
-                <div className="productExM">(24개월)</div>
+                <div className="productExM">({a.long}개월)</div>
               </div>
             </div>
             
