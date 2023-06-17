@@ -42,7 +42,7 @@ export default async function deposit3d(props){
                                     <div>
                                         기본 2.45%
                                     </div>
-                                    <div className="d3dBTID">({result.long})</div>
+                                    <div className="d3dBTID">({result.long}개월)</div>
                             </div>
                         </div>
                         <div className="d3dbD">
@@ -61,9 +61,9 @@ export default async function deposit3d(props){
             <p className="deposit3dII">{result.care}</p>
         </div>
         <div className="deposit3DBB">
-            <Link href={'/shoplist'}><button className="deposit3DB">장바구니</button></Link>
-            <Link href={'/mypage/buylist'}><button className="deposit3DB1">가입하기</button></Link>
-            <Link href={'https://www.kbstar.com/'}><button className="deposit3DB1">은행 사이트</button></Link>
+            {/* <Link href={'/shoplist'}><button className="deposit3DB">장바구니</button></Link> */}
+            <Link href={'/mypage/buylist'} className="text-decorationw"><button className="deposit3DB1">가입하기</button></Link>
+            {/* <Link href={`${result.link}`} className="text-decorationw"><button className="deposit3DB1">은행 사이트</button></Link> */}
         </div>
         
     </div>

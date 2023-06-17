@@ -674,7 +674,7 @@
   }
   .deposit3DBB{
       display: flex;
-      margin: 20px 0px 0px 600px;
+      margin: 20px 0px 0px 940px;
   }
   .deposit3DB{
       display: block;
@@ -1166,7 +1166,7 @@
   font-size: 22px;
   font-weight: 500;
   margin-top: 30px;
-  margin-left: 170px;
+  margin-left: 790px;
 }
 .text-decoration{
   text-decoration: none;
