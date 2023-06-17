@@ -11,8 +11,7 @@ export default function Header(){
           <div className='headerbox'>
           <div className='title' onClick={()=>{router.push('/') }}>적금 저금 </div>
             <div className='login'>
-              <div className='loginBox'  onClick={()=>{ signIn()}}>로그인</div>
-              <div className='loginBox'onClick={()=>{router.push('/signin') }}>회원가입</div>
+              <div className='loginBox'  onClick={()=>{ signIn()}}>로그인과 회원가입</div>
             </div>
           </div> 
             <div className='headerMenu'>
