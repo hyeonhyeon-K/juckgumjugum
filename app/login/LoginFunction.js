@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import React from "react"
+import {signIn} from "next-auth/react"
 
 
 export default function LoginFunction(){
+    
 
     return(
         <div className="headerdiv">
@@ -13,11 +15,11 @@ export default function LoginFunction(){
                     <div className="loginBenner"></div>
                     <div className="loginContentBox">
                         <Link href={'/'} className='links'><div id="loginTitle">적금 저금</div></Link>
-                        <from className="loginInputBox">
-                            <input placeholder=" ID"></input>
-                            <input placeholder=" PW"></input>
-                            <Link href={'/'} className='links'><button id="loginButton">로그인</button></Link>
-                        </from>
+                        <form  method ="post" action ="/api/auth/signin"  className="loginInputBox">
+                            <input placeholder=" ID" name="email" type="id"></input>
+                            <input placeholder=" PW" name="password" type="password"></input>
+                            <button id="loginButton"  type="submit">로그인</button>
+                        </form>
                         <div className="loginOption">
                             <Link href={'/'} className='links'><span >게스트 로그인</span></Link>
                             
@@ -28,7 +30,7 @@ export default function LoginFunction(){
                             <div>구글</div>
                             <div>네이버</div>
                             <div>카카오</div>
-                            <div>깃헙</div>
+                            <button  onClick={()=>{ signIn()}}>깃헙</button>
                         </div>
                     </div>
                 </div>

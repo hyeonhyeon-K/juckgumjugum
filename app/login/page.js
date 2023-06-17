@@ -1,7 +1,9 @@
+
 import LoginFunction from "./LoginFunction"
 import React from "react"
 
-export default function Login(){
+export default async function Login(){
+
     return(
         <div>
             <LoginFunction/>

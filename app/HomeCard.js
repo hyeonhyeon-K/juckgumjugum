@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useRouter } from "next/navigation";
 import cukmin from "../public/cukmin.png"
 import React from "react"
+import Link from 'next/link';
 // import { useGetUsersQuery } from '../redux/services/userApi';
 
 export default function Home(result){
@@ -23,7 +24,6 @@ export default function Home(result){
   const datamap = data.map((a,i) => (
 <div className="body" key={a}>
       <div className="MainContentBox" />
-      {console.log(data)}
       <div className="subTitle">
         {/* 여기서부터 map */}
         <div onClick={()=>{router.push(`/detail/${data[i]._id}`) }}>
@@ -68,7 +68,9 @@ export default function Home(result){
   return(
     <>
       {datamap}
-      <button className='createButtonMain'>내 상품 등록</button>
+        <Link href={'/create'}>
+          <button className='createButtonMain'>내 상품 등록</button>
+        </Link>
     </>
     
   )
