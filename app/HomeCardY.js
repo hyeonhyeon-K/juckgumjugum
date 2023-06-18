@@ -10,10 +10,10 @@ import PropTypes from 'prop-types';
 
 export default function Home(props){
   // eslint-disable-next-line react/prop-types
-  const {result} = props;
+  const {resultY} = props;
 
 
-  const modifiedResult = result.map((item) => {
+  const modifiedResult = resultY.map((item) => {
     if (item.bank === '우리은행') {
       return { ...item, cuk: '60' };
     } else {
@@ -21,8 +21,8 @@ export default function Home(props){
     }
   });
 
-  // const data = result.result
-
+  // const data = resultY.resultY
+console.log(resultY)
 
   const datamap = modifiedResult.slice(0, 3).map((a,i) => (
 <div className="body" key={a}>
@@ -76,6 +76,6 @@ export default function Home(props){
   )
 }
 Home.propTypes = {
-  result: PropTypes.string.isRequired,
+  resultY: PropTypes.string.isRequired,
   resultFF: PropTypes.string.isRequired,
 };

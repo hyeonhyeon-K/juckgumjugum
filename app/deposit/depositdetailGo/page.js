@@ -1,13 +1,13 @@
 
 import { connectDB } from "../../util/database.js"
-import DepositBenner from "./DepositBenner"
-import DepositDetail from "./DepositDetail"
+import DepositBenner from "./DepositBenner.js"
+import DepositDetail from "./DepositDetail.js"
 import React from "react"
 
 
 export default async function depostidetail(){
     const dbYG = (await connectDB).db('jukgum');
-    let result = await dbYG.collection('get').find({ type: '정기적금' }).toArray();
+    let result = await dbYG.collection('get').find({ type: '종류적금' }).toArray();
 
     let resultFilter = Array.isArray(result)
     ? result
