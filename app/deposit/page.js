@@ -14,7 +14,7 @@ export default async function deposit(){
       array.findIndex((element) => element._id === item._id) === index
     )
     .map((item) => item._id).map((item) => item.toString());
-console.log(resultFilter)
+
     const resultFF =  resultFilter
 
 

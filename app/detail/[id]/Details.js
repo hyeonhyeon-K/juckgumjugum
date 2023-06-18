@@ -1,7 +1,6 @@
 'use client'
 import React from "react"
 import Image from "next/image"
-import cukmin from "../../../public/cukmin.png"
 import Link from "next/link"
 
 
@@ -21,7 +20,7 @@ const bankLink = result.link
         <div className="deposit3dbox">
             <div className="deposit3dBox1">
                 <div className="deposit3dImgbox">
-                <Image src={cukmin} alt={'국민은행'} width="180" height="180" className='deposit3dimg'/>
+                <Image src={`/${result.bank}.png`} alt={'국민은행'} width="180" height="180" className='deposit3dimg'/>
                 </div>
                 <div className="deposit3dBox2">
                     <div className="d3d">

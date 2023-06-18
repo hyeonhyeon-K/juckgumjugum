@@ -2,7 +2,7 @@
 import { FaRegBell, FaRegUser, FaShoppingBasket } from "react-icons/fa";
 import React from "react";
 import Image from 'next/image'
-import cukmin from "./../../../public/cukmin.png"
+import cukmin from "./../../../public/국민은행.png"
 
 
 export default function Alramlist(){
