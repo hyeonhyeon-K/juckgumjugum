@@ -6,12 +6,12 @@ import Link from 'next/link'
 
 
 export default function Homecard(props) {
-  const {result, resultFF} = props;
+  const {resultYG, resultGo} = props;
 
   return(
     <div className='depositBoxss'>
       {
-      result.slice(0, 3).map((a,i)=>(
+      resultYG.slice(0, 3).map((a,i)=>(
         <div className="depositBox1" key={a}>
           <div className="depositBox2"></div>
           <div className="depositBody" >
@@ -21,7 +21,7 @@ export default function Homecard(props) {
               
             <div className="productHeader">
               <Image src={`/${a.bank}.png`} alt={'국민은행'} width="50" height="50" className="productImg"/>
-              <Link href={`detail/${resultFF[i]}`} className='text-decoration'><div className="productTitle">{a.title}</div></Link>
+              <Link href={`detaily/${resultGo[i]}`} className='text-decoration'><div className="productTitle">{a.title}</div></Link>
             </div>
             <div className="productSub">
               <div className="productSubTitle">[{a.tag}]</div>
@@ -52,6 +52,6 @@ export default function Homecard(props) {
 }
 
 Homecard.propTypes = {
-  result: PropTypes.string.isRequired,
-  resultFF: PropTypes.string.isRequired,
+  resultYG: PropTypes.string.isRequired,
+  resultGo: PropTypes.string.isRequired,
 };
