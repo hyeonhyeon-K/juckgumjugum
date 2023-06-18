@@ -21,7 +21,8 @@ export default async function deposit3d(props){
             </div>
         </div>
         <div className="deposit3dbox">
-            <div className="deposit3dBox1">
+            <div className="deposit3dBox1"> 
+            
                 <div className="deposit3dImgbox">
                 <Image src={cukmin} alt={'국민은행'} width="180" height="180" className='deposit3dimg'/>
                 </div>
