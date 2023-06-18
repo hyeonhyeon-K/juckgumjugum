@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import cukmin from "../../public/cukmin.png"
+import cukmin from "../../public/국민은행.png"
 import React from "react"
 import PropTypes from 'prop-types';
 import Link from 'next/link'
@@ -21,7 +21,7 @@ export default function Homecard(props) {
             <div className="productCard">
               
             <div className="productHeader">
-              <Image src={cukmin} alt={'국민은행'} width="50" height="50" className="productImg"/>
+              <Image src={`/${a.bank}.png`} alt={'국민은행'} width="50" height="50" className="productImg"/>
               <Link href={`detail/${resultFF[i]}`} className='text-decoration'><div className="productTitle">{a.title}</div></Link>
             </div>
             <div className="productSub">

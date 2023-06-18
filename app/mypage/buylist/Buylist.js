@@ -2,8 +2,7 @@
 import { FaRegBell, FaShoppingBasket } from "react-icons/fa";
 import Image from 'next/image'
 import React from "react"
-import cukmin from "./../../../public/cukmin.png"
-
+import cuk from "../../../public/국민은행.png"
 
 export default function Mypage(result){
     const mypagemap = result.result
@@ -33,7 +32,7 @@ export default function Mypage(result){
                     <div className='buyListBox'>
                         
                         <div className="buyListflex">
-                        <Image src={cukmin} alt={'국민은행'} width="55" height="55" className='shopListImg'/>
+                        <Image src={cuk} alt={`${result.bank}`} width="55" height="55" className='shopListImg'/>
                     
                         <div className='shopList'>
                                 <div className='buyListTag'>
@@ -59,11 +58,11 @@ export default function Mypage(result){
                         {/* 여기서부터 아래 표시까지 map 걸면 댐 */}
 
                         {
-                            mypagemap.map((a,i)=>(
+                            mypagemap.map((a)=>(
                                 <>
-                                <div className="buyListFlexBox" key={i}/>
+                                <div className="buyListFlexBox" key={a}/>
                                 <div className="buyListflex">
-                                <Image src={cukmin} alt={'국민은행'} width="55" height="55" className='shopListImg'/>
+                                <Image src={`/${a.bank}.png`} alt={'국민은행'} width="55" height="55" className='shopListImg'/>
                             
                                 <div className='shopList'>
                                         <div className='buyListTag'>
