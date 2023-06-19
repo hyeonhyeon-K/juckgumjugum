@@ -36,6 +36,7 @@
     display: flex;
     position: relative;
     margin-left: 135px;
+    height: 40px;
   }
   #headerMenuBox{
     margin-top: 10px;
@@ -123,7 +124,6 @@
     display: block;
     box-sizing: border-box;
     width: 245px;
-    height: 250px;
     left: 194px;
     margin-top: 20px;
     background-color: #ffffff;
@@ -172,7 +172,7 @@
     color: #585858;
   }
   .productSubMainSub{
-    margin-left: 17px;
+    margin-left: 20px;
     font-size: 13px;
     color:#969696
   }
@@ -202,16 +202,18 @@
   }
   .productEx{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     margin-top: 16px;
+    margin-left: 10px;
+    align-items: center;
+    padding-bottom: 10px;
   }
   .productExNum{
-    margin-left: 12px;
-    font-size: 17px;
     color: #BAB9B9;
   }
   .productExM{
     margin-top: 3px;
-    margin-left: 43px;
     font-size: 15px;
     color: #BAB9B9;
   }
@@ -534,7 +536,7 @@
   .ddcontentInfbox{
       display: flex;
       color: #BAB9B9;
-      margin: 12px 0px 0px 20px;
+      margin: 0px 0px 0px 350px;
       font-size: 17px;
   }
   .ddcontentInfboxSub{
@@ -1192,4 +1194,16 @@
 }
 .createy{
   display: flex;
+  margin-top: 40px;
+}
+#serchIcon{
+  height: 18px;
+  width: 40px;
+  margin: 4px 0px 0px 155px;
+  color: #585858;
+}
+.productExNum1{
+  margin-left: 10px;
+  font-size: 17px;
+  color: #BAB9B9; 
 }

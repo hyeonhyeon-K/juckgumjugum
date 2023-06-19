@@ -29,7 +29,7 @@ console.log(resultY)
       <div className="MainContentBox" />
       <div className="subTitle">
         {/* 여기서부터 map */}
-        <div onClick={()=>{router.push(`/detail/${modifiedResult[i]._id}`) }}>
+        <div onClick={()=>{router.push(`/detaily/${modifiedResult[i]._id}`) }}>
           {/* <div className="subTitleFont"> 예금 </div>
           <FaAngleRight className="subTitleIcon"/> */}
           <div className="card">
