@@ -1,18 +1,18 @@
 import { connectDB } from "../util/database.js"
 import DeositFunction from "./DepositFunction.js"
-import DeositFunctionY from "./DepositFunctionY.js"
+import DeositFunctionGo from "./DepositFunctionGo.js"
 import DayDeposit from "./DayDeposit.js"
-import DayDepositY from "./DayDepositY.js"
+import DayDepositGo from "./DayDepositGo.js"
 import Expalne from "./Explan.js";
 // import Link from "next/link";
 import React from "react"
 
 export default async function deposit(){
-    const dbY = (await connectDB).db('jukgum');
-    let resultY = await dbY.collection('get').find({ type: '정기적금' }).toArray();
+    const dbY = (await connectDB).db('yegum');
+    let resultY = await dbY.collection('yegum').find({ type: '정기예금' }).toArray();
   
-    const dbYG = (await connectDB).db('jukgum');
-    let resultYG = await dbYG.collection('get').find({ type: '종류적금' }).toArray();
+    const dbYG = (await connectDB).db('yegum');
+    let resultYG = await dbYG.collection('yegum').find({ type: '종류예금' }).toArray();
   
 
     let resultFilter = Array.isArray(resultY)
@@ -30,20 +30,20 @@ export default async function deposit(){
         )
         .map((item) => item._id.toString())
     : [];
-
+//   console.log(resultFilter);
     const resultFF =  resultFilter
     const resultGo = resultFilterGo
 
     return(
         <div>
             <Expalne/>
-            <DayDeposit/>
+            <DayDeposit resultYG={resultYG}/>
                 <div className="depositBoxss">
-                    <DeositFunction result={resultY} resultFF={resultFF}/>
+                    <DeositFunction resultY={resultY} resultFF={resultFF}/>
                 </div>
-            <DayDepositY/>
+            <DayDepositGo/>
             <div className="depositBoxss">
-                    <DeositFunctionY resultYG={resultYG} resultGo={resultGo}/>
+                    <DeositFunctionGo resultYG={resultYG} resultGo={resultGo}/>
                 </div>
         </div>
     )

@@ -674,7 +674,7 @@
   }
   .deposit3DBB{
       display: flex;
-      margin: 20px 0px 0px 600px;
+      margin: 20px 0px 0px 940px;
   }
   .deposit3DB{
       display: block;
@@ -1017,6 +1017,7 @@
 }
 .mainBox{
   margin-left: 150px;
+  margin-bottom: -90px;
 }
 .createBox{
   display: flex;
@@ -1165,8 +1166,18 @@
   color: #FFFFFF;
   font-size: 22px;
   font-weight: 500;
-  margin-top: 30px;
-  margin-left: 170px;
+  margin-left: 790px;
+}
+.createButtonMain1{
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border: solid rgba(0, 0, 0, 0);
+  background-color: #2649FF;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 20px;
 }
 .text-decoration{
   text-decoration: none;
@@ -1178,4 +1189,7 @@
   display: flex;
   color: #FFFFFF;
   font-weight: 400;
+}
+.createy{
+  display: flex;
 }

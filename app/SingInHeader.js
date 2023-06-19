@@ -17,8 +17,8 @@ export default async function Header(){
           <div className='headerbox'>
           <div className='title' onClick={()=>{router.push('/') }}>적금 저금 </div>
             <div className='login'>
-              <div className='loginBox' onClick={()=>{router.push('/shoplist') }}>장바구니</div>
-              <div className='loginBox'onClick={()=>{router.push('/mypage') }}>마이페이지</div>
+              {/* <div className='loginBox' onClick={()=>{router.push('/shoplist') }}>장바구니</div> */}
+              <div className='loginBox'onClick={()=>{router.push('mypage/buylist') }}>마이페이지</div>
               <div onClick={()=>{router.push('/') }}>
                 <div className='loginBox'onClick={handleLogout}>로그아웃</div>
               </div>
@@ -27,6 +27,7 @@ export default async function Header(){
             <div className='headerMenu'>
               <div id='headerMenuBox' onClick={()=>{router.push('/') }}>홈</div>
               <div id='headerMenuBox' onClick={()=>{router.push('/deposit') }}>적금</div>
+              <div id='headerMenuBox' onClick={()=>{router.push('/deposity') }}>예금</div>
               {/* <div id='headerMenuBox' onClick={()=>{router.push('/') }}>소개</div> */}
                 <div className='searchBox'>
                   <div id='headerMenuSearchBox'></div>

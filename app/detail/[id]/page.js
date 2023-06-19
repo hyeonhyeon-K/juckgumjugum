@@ -3,7 +3,7 @@ import { ObjectId } from "mongodb";
 import Link from "next/link.js";
 import React from "react"
 import Image from "next/image"
-import cukmin from "../../../public/cukmin.png"
+
 
 
 export default async function deposit3d(props){
@@ -11,6 +11,8 @@ export default async function deposit3d(props){
   let result = await db.collection('get').findOne({_id : new ObjectId(props.params.id)});
   // const apiId = props.params.id
   // console.log(props)
+
+  
     return(
         <div>
             <div> 
@@ -24,7 +26,7 @@ export default async function deposit3d(props){
             <div className="deposit3dBox1"> 
             
                 <div className="deposit3dImgbox">
-                <Image src={cukmin} alt={'국민은행'} width="180" height="180" className='deposit3dimg'/>
+                <Image src={`/${result.bank}.png`} alt={`${result.bank}.png`} width="180" height="180" className='deposit3dimg'/>
                 </div>
                 <div className="deposit3dBox2">
                     <div className="d3d">
@@ -43,7 +45,7 @@ export default async function deposit3d(props){
                                     <div>
                                         기본 2.45%
                                     </div>
-                                    <div className="d3dBTID">({result.long})</div>
+                                    <div className="d3dBTID">({result.long}개월)</div>
                             </div>
                         </div>
                         <div className="d3dbD">
@@ -62,9 +64,9 @@ export default async function deposit3d(props){
             <p className="deposit3dII">{result.care}</p>
         </div>
         <div className="deposit3DBB">
-            <Link href={'/shoplist'}><button className="deposit3DB">장바구니</button></Link>
-            <Link href={'/mypage/buylist'}><button className="deposit3DB1">가입하기</button></Link>
-            <Link href={'https://www.kbstar.com/'}><button className="deposit3DB1">은행 사이트</button></Link>
+            {/* <Link href={'/shoplist'}><button className="deposit3DB">장바구니</button></Link> */}
+            <Link href={'/mypage/buylist'} className="text-decorationw"><button className="deposit3DB1">가입하기</button></Link>
+            {/* <Link href={`${result.link}`} className="text-decorationw"><button className="deposit3DB1">은행 사이트</button></Link> */}
         </div>
         
     </div>

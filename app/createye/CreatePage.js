@@ -7,7 +7,7 @@ import React from "react"
 export default function Create(){
     return(
         <div className="createBody">
-            <form method ="POST" action ="/api/post">
+            <form method ="POST" action ="/api/posty">
                 <div className="create1">
                     <div className="create1W">상품이름</div>
                     <input className="createInputTitle" name="title"></input>

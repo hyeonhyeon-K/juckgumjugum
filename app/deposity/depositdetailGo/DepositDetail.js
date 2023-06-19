@@ -3,20 +3,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
-import PropTypes from 'prop-types';
 
-export default function DepositDetail(props){
-    const {result, resultFF} = props;
-
+export default function DepositDetail(resultYG){
     
+    const DDmap = resultYG.resultYG
+    console.log(DDmap[0])
+    console.log('a')
   return(
     <>
-        {result.map((a,i)=>(
+        {DDmap.map((a,i)=>(
             <div className="depositdetailbox"  key={a}>
                 <div className='depositdetailboxS'>
-                    <Link href={`detail/${resultFF[i]}`} className='text-decoration'> 
+                <Link href={`/detaily/${a._id}`} className='text-decoration'>
                 <div className='depositdetailboxS1'>
-                <Image src={`/${a.bank}.png`} alt={'국민은행'} width="60" height="60" className='ddI'/>
+                <Image src={`/${a.bank}.png`} alt={`/${DDmap[i].bank}.png`} width="60" height="60" className='ddI'/>
                     <div className='ddInfTitle'>최고연</div>
                     <div className='ddbs2'>
                         <div className='ddInfNum'>{a.high}</div>
@@ -54,7 +54,3 @@ export default function DepositDetail(props){
 </>
   )
 }
-DepositDetail.propTypes = {
-    result: PropTypes.string.isRequired,
-    resultFF: PropTypes.string.isRequired,
-  };
