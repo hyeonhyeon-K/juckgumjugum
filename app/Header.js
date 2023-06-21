@@ -1,0 +1,45 @@
+"use client"
+
+import { useRouter } from "next/navigation";
+import {signIn} from "next-auth/react"
+import { FaSearch } from "react-icons/fa";
+import React from "react"
+// import { useEffect } from 'react';
+
+export default function Header(){
+  // useEffect(() => {
+  //   const ws = new WebSocket('ws://localhost:8080');
+
+  //   // 서버로부터 메시지 받기
+  //   ws.onmessage = (event) => {
+  //     console.log(`받은 메시지:ss`);
+  //     // TODO: 알림 창 업데이트 로직 구현
+  //   };
+
+  //   // 컴포넌트 언마운트 시 WebSocket 연결 종료
+  //   return () => {
+  //     ws.close();
+  //   };
+  // }, []);
+    let router = useRouter()
+    return(
+        <header>
+          <div className='headerbox'>
+          <div className='title' onClick={()=>{router.push('/') }}>적금 저금 </div>
+            <div className='login'>
+              <div className='loginBox'  onClick={()=>{ signIn()}}>로그인과 회원가입</div>
+            </div>
+          </div> 
+            <div className='headerMenu'>
+              <div id='headerMenuBox' onClick={()=>{router.push('/') }}>홈</div>
+              <div id='headerMenuBox' onClick={()=>{router.push('/deposit') }}>적금</div>
+              <div id='headerMenuBox' onClick={()=>{router.push('/deposity') }}>예금</div>
+              {/* <div id='headerMenuBox' onClick={()=>{router.push('/') }}>소개</div>   */}
+                <div className='searchBox'>
+                  <div id='headerMenuSearchBox'><FaSearch id="serchIcon"/></div>
+                </div>
+            </div>
+        </header>
+        
+    )
+}
