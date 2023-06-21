@@ -19,8 +19,7 @@ export default async function Home(){
 
 
   let sessions = await getServerSession(authOptions)
-console.log(sessions)
-console.log('a')
+
   return(
     <div>
       <Benner></Benner>

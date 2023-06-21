@@ -22,14 +22,14 @@ export default function Home(props){
   });
 
   // const data = resultY.resultY
-console.log(resultY)
+
 
   const datamap = modifiedResult.slice(0, 3).map((a,i) => (
 <div className="body" key={a}>
       <div className="MainContentBox" />
       <div className="subTitle">
         {/* 여기서부터 map */}
-        <div onClick={()=>{router.push(`/detail/${modifiedResult[i]._id}`) }}>
+        <div onClick={()=>{router.push(`/detaily/${modifiedResult[i]._id}`) }}>
           {/* <div className="subTitleFont"> 예금 </div>
           <FaAngleRight className="subTitleIcon"/> */}
           <div className="card">

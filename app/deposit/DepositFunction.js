@@ -35,7 +35,7 @@ export default function Homecard(props) {
                 <div className="productMainNumper">%</div>
               </div>
               <div className="productEx">
-                <div className="productExNum">기본 2.45 %</div>
+                <div className="productExNum1">기본 2.45 %</div>
                 <div className="productExM">({a.long}개월)</div>
               </div>
             </div>

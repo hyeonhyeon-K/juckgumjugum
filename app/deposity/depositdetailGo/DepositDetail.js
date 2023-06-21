@@ -7,8 +7,7 @@ import React from "react"
 export default function DepositDetail(resultYG){
     
     const DDmap = resultYG.resultYG
-    console.log(DDmap[0])
-    console.log('a')
+
   return(
     <>
         {DDmap.map((a,i)=>(

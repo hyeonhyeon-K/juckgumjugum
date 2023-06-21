@@ -30,7 +30,7 @@ export default async function deposit(){
         )
         .map((item) => item._id.toString())
     : [];
-//   console.log(resultFilter);
+
     const resultFF =  resultFilter
     const resultGo = resultFilterGo
 

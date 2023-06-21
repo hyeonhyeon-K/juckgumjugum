@@ -10,7 +10,7 @@ export default async function deposit3d(props){
   let db = (await connectDB).db('yegum')
   let result = await db.collection('yegum').findOne({_id : new ObjectId(props.params.id)});
   // const apiId = props.params.id
-  // console.log(props)
+
 
   
     return(

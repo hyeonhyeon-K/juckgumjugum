@@ -24,6 +24,7 @@ export default async function handler(req, res) {
       let db = (await connectDB).db('jukgum');
       let result = db.collection('get').insertOne(req.body);
       res.redirect(302, '/');
+      console.log(result)
     } catch (error) {
       console.log('에러 발생:', error);
     }

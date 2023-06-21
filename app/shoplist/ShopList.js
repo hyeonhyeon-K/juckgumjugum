@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import cukmin from "./../../public/cukmin.png"
+import cukmin from "./../../public/국민은행.png"
 import React from "react"
 
 export default function DepositDetail(){

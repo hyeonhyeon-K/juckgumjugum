@@ -10,7 +10,7 @@ export default async function deposit3d(props){
   let db = (await connectDB).db('jukgum')
   let result = await db.collection('get').findOne({_id : new ObjectId(props.params.id)});
   // const apiId = props.params.id
-  // console.log(props)
+
 
   
     return(
@@ -23,7 +23,8 @@ export default async function deposit3d(props){
             </div>
         </div>
         <div className="deposit3dbox">
-            <div className="deposit3dBox1">
+            <div className="deposit3dBox1"> 
+            
                 <div className="deposit3dImgbox">
                 <Image src={`/${result.bank}.png`} alt={`${result.bank}.png`} width="180" height="180" className='deposit3dimg'/>
                 </div>
