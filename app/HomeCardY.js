@@ -22,7 +22,7 @@ export default function Home(props){
   });
 
   // const data = resultY.resultY
-console.log(resultY)
+
 
   const datamap = modifiedResult.slice(0, 3).map((a,i) => (
 <div className="body" key={a}>

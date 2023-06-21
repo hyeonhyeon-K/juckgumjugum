@@ -1,10 +1,10 @@
-import SigninFunction from './SigninFunction.js'
+import SignupFunction from './SignupFunction.js'
 import React from "react"
 
 export default function Signin(){
     return(
         <div>
-            <SigninFunction />
+            <SignupFunction />
         </div>
     )
 }

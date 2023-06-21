@@ -23,6 +23,7 @@ export default async function handler(req, res) {
     try {
       let db = (await connectDB).db('yegum');
       let result = db.collection('yegum').insertOne(req.body);
+      console.log(result)
       res.redirect(302, '/');
     } catch (error) {
       console.log('에러 발생:', error);
