@@ -18,10 +18,10 @@ export default function Homecard(props) {
           <div className="MainContentBox" />
           <div className="explaneSubTitle">
             <div className="productCard">
-              
+            <Link href={`detaily/${resultGo[i]}`} className='text-decoration2'>
             <div className="productHeader">
               <Image src={`/${a.bank}.png`} alt={'국민은행'} width="50" height="50" className="productImg"/>
-              <Link href={`detaily/${resultGo[i]}`} className='text-decoration'><div className="productTitle">{a.title}</div></Link>
+              <div className="productTitle">{a.title}</div>
             </div>
             <div className="productSub">
               <div className="productSubTitle">[{a.tag}]</div>
@@ -39,7 +39,7 @@ export default function Homecard(props) {
                 <div className="productExM">({a.long}개월)</div>
               </div>
             </div>
-            
+            </Link>
           </div>
           </div>
           

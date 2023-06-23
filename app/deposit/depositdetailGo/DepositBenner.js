@@ -7,7 +7,7 @@ export default function Expalne(){
         <div className="expalnebox">
             <p id="explaneTitle">종류적금</p>
             <p id="explaneContent">
-              어떤 종류의 적금이 좋을까 생각하는 적금입니다.
+              정기적금 외 여러 종류의 적금을 만나보세요!
             </p>
         </div>
     </div>

@@ -7,7 +7,7 @@ export default function Expalne(){
         <div className="expalnebox">
             <p id="explaneTitle">종류예금</p>
             <p id="explaneContent">
-            아직 어떤 종류의 예금을 넣을지 고민중인 겁니다. 하핳
+              정기 예금 외 여러 종류의 예금을 확인해 보세요!
             </p>
         </div>
     </div>
