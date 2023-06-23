@@ -1,32 +1,36 @@
-import { connectDB } from "../../app/util/database.js"
+import { connectDB } from "../../app/util/database.js";
 
 export default async function handler(req, res) {
-  if (req.method == 'POST') {
-    if (req.body.title == '') {
-      return res.status(500).json('제목을 입력하세요.');
-    } else if (req.body.bank == '') {
-      return res.status(500).json('은행을 선택하세요.');
-    } else if (req.body.content == '') {
-      return res.status(500).json('내용을 입력하세요.');
-    } else if (req.body.tag == '' || req.body.tag1 == '' || req.body.tag3 == '') {
-      return res.status(500).json('태그를 입력하세요.');
-    }else if (req.body.detail == '' || req.body.detail2 == '' || req.body.detail3 == '') {
-        return res.status(500).json('내용을 입력하세요.');
-      }else if (req.body.high == '') {
-        return res.status(500).json('내용을 입력하세요.');
-      }else if (req.body.long == '') {
-        return res.status(500).json('내용을 입력하세요.');
-      }else if (req.body.care == '') {
-        return res.status(500).json('내용을 입력하세요.');
-      }
-    
+  if (req.method === "POST") {
+    const { title, bank, content, tag, tag1, tag3, detail, detail2, detail3, high, long, care } = req.body;
+
+    if (!title || title.length === 0) {
+      return res.status(500).json({ message: "제목을 입력하세요." });
+    } else if (title.length > 5) {
+      return res.status(500).json({ message: "제목의 글자수를 지켜주세요." });
+    } else if (!bank) {
+      return res.status(500).json({ message: "은행을 선택하세요." });
+    } else if (!content) {
+      return res.status(500).json({ message: "내용을 입력하세요." });
+    } else if (!tag || !tag1 || !tag3) {
+      return res.status(500).json({ message: "태그를 입력하세요." });
+    } else if (!detail || !detail2 || !detail3) {
+      return res.status(500).json({ message: "내용을 입력하세요." });
+    } else if (!high) {
+      return res.status(500).json({ message: "내용을 입력하세요." });
+    } else if (!long) {
+      return res.status(500).json({ message: "내용을 입력하세요." });
+    } else if (!care) {
+      return res.status(500).json({ message: "내용을 입력하세요." });
+    }
+
     try {
-      let db = (await connectDB).db('jukgum');
-      let result = db.collection('get').insertOne(req.body);
-      res.redirect(302, '/');
-      console.log(result)
+      const db = (await connectDB).db("jukgum");
+      const result = await db.collection("get").insertOne(req.body);
+      console.log(result);
+      res.redirect(302, "/");
     } catch (error) {
-      console.log('에러 발생:', error);
+      console.log("에러 발생:", error);
     }
   }
 }

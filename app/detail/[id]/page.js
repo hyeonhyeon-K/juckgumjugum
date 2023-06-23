@@ -26,7 +26,7 @@ export default async function deposit3d(props){
             <div className="deposit3dBox1"> 
             
                 <div className="deposit3dImgbox">
-                <Image src={`/${result.bank}.png`} alt={`${result.bank}.png`} width="180" height="180" className='deposit3dimg'/>
+                <Image src={`/${result.bank}.png`} alt={`${result.bank}.png`} priority={true} width="180" height="180" className='deposit3dimg'/>
                 </div>
                 <div className="deposit3dBox2">
                     <div className="d3d">
