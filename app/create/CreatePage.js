@@ -90,6 +90,8 @@ export default function Create() {
           <input className="createInputPoint1" name="link" required 
           min={1} maxLength={100} 
           placeholder="ex) www.naver.com"
+          type="url"
+          title="https://나 http:// 를 포함해야 합니다. "
           />
         </div>
         <button className="createButton" type="submit">

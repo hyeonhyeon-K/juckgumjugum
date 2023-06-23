@@ -70,7 +70,10 @@ export default function Create() {
           </div>
           <input className="createInputHigh" name="high" required
           min={1} maxLength={3} 
-          placeholder="ex) 2.5"/>
+          placeholder="ex) 2.5"
+          type="text"
+          pattern="/[^-\.0-9]/g,''"
+          title="총3자리 숫자와 점만 입력 가능합니다! "/>
           <div className="createMonth">예치개월</div>
           <input className="createInputMonth" name="long" required
           min={1} maxLength={3} 
@@ -88,7 +91,10 @@ export default function Create() {
           <div>상품링크</div>
           <input className="createInputPoint1" name="link" required 
           min={1} maxLength={100} 
-          placeholder="ex) www.naver.com"/>
+          placeholder="ex) www.naver.com"
+          type="url"
+          title="https://나 http:// 를 포함해야 합니다. "
+          />
         </div>
         <button className="createButton" type="submit">
           상품등록하기
