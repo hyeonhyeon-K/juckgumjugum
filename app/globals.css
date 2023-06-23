@@ -1061,9 +1061,10 @@
   font-size: 20px;
 }
 .createInputBank{
-  height: 35px;
+  height: 40px;
   width: 160px;
   font-size: 20px;
+  margin-top: 20px;
 }
 .createInputTag{
   height: 35px;
@@ -1083,9 +1084,10 @@
   margin: 17px 20px 0px 0px ;
 }
 .createInputPoint1{
-  height: 35px;
+  height: 40px;
   width: 833px;
   margin-left: 10px;
+  margin-top: 20px;
   font-size: 20px;
 }
 .createInputPoint2{
