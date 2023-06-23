@@ -5,9 +5,9 @@ export default function Expalne(){
   return(
     <div className="explanbody">
         <div className="expalnebox">
-            <p id="explaneTitle">보통적금</p>
+            <p id="explaneTitle">정기적금</p>
             <p id="explaneContent">
-            입출금이 자유롭고, 가입대상이나 예치금액, 예치기간에 제약이 없습니다.
+            일정 금액을 일정 기간 동안 금융 기관에 맡기고 정한 기한 안에는 찾지 아니하겠다는 약속으로 하는 적금으로 이자율이 높습니다.
             </p>
         </div>
     </div>

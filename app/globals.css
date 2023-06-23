@@ -179,7 +179,7 @@
   .productMainBox{
     display: flex;
     font-size: 18px;
-    margin-right: 22px;
+
     margin-bottom: 10px;
     margin-left: 10px;
   }
@@ -1206,4 +1206,8 @@
   margin-left: 10px;
   font-size: 17px;
   color: #BAB9B9; 
+}
+.text-decoration2{
+  color: #000;
+  text-decoration: none;
 }

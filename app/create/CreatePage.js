@@ -1,36 +1,52 @@
 "use client"
-
-import React, { useState } from "react";
-import alert from "react"
+import React from "react";
 
 export default function Create() {
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  // const handleSubmit = () => {
 
-    try {
-      const response = await fetch("/api/post", {
-        method: "POST",
-        body: new FormData(event.target),
-      });
+  //   try {
+  //     const response = fetch("/api/post", {
+  //       method: "POST"
+  //     });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        setError(errorData.message);
-        alert("제목 글자수 확인해라잉");
-        console.log(error)
-      } else {
-        // Success handling code here
-      }
-    } catch (error) {
-      console.log("에러 발생:", error);
-    }
-  };
+  //     if (!response.ok) {
+  //       const errorData = response.json();
+  //       setError(errorData.message);
 
+  //       if (errorData.message === "제목.") {
+  //         alert("제목을 입력해 주세요.");
+  //       } else if (errorData.message === "제목 글자수.") {
+  //         alert("제목 글자수는 5글자 이내로 작성해주세요.");
+  //       } else if (errorData.message === "은행.") {
+  //         alert("은행을 선택해주세요.");
+  //       } else if (errorData.message === "상품내용.") {
+  //         alert("상품 설명을 적어주세요.");
+  //       } else if (errorData.message === "내용.") {
+  //         alert("상품특징 3개 모두 입력해주세요.");
+  //       } else if (errorData.message === "태그.") {
+  //         alert("태그 3개 모두 입력하세요.");
+  //       } else if (errorData.message === "최고 이자율.") {
+  //         alert("최고 이자율을 설정해 주세요.");
+  //       } else if (errorData.message === "길게.") {
+  //         alert("최대 몇 개월 예치 가능한지 설정해주세요.");
+  //       } else if (errorData.message === "주의사항.") {
+  //         alert("상품 주의사항을 입력해주세요.");
+  //       } else if (errorData.message === "태그.") {
+  //         alert("태그 3개 모두 입력하세요.");
+  //       }
+  //       console.log(error);
+  //     } else {
+  //       // 성공 처리 코드를 여기에 추가합니다.
+  //     }
+  //   } catch (error) {
+  //     console.log("에러 발생:", error);
+  //   }
+  // };
   return (
     <div className="createBody">
-      <form onSubmit={handleSubmit}>
+      <form action="/api/post" method="post">
         <div className="create1">
           <div className="create1W">상품이름</div>
           <input className="createInputTitle" name="title" />

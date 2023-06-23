@@ -24,7 +24,7 @@ export default async function Home(){
     <div>
       <Benner></Benner>
       <div>
-<div>s</div>
+
       <div className="subtitleBox">
         <Link href={'./deposit'} className="text-decoration">
           <div className="subTitleFont"> 적금 </div>
