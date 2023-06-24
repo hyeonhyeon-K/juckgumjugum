@@ -3,11 +3,12 @@
 import Link from "next/link";
 import React from "react"
 import {signIn} from "next-auth/react"
+import { useSelector } from "react-redux"
 
 
 export default function LoginFunction(){
-    
-
+    let a = useSelector((state) => state.user ) 
+    console.log(a)
     return(
         <div className="headerdiv">
             <div className="loginbody">

@@ -4,23 +4,10 @@ import { useRouter } from "next/navigation";
 import {signIn} from "next-auth/react"
 import { FaSearch } from "react-icons/fa";
 import React from "react"
-// import { useEffect } from 'react';
+
 
 export default function Header(){
-  // useEffect(() => {
-  //   const ws = new WebSocket('ws://localhost:8080');
 
-  //   // 서버로부터 메시지 받기
-  //   ws.onmessage = (event) => {
-  //     console.log(`받은 메시지:ss`);
-  //     // TODO: 알림 창 업데이트 로직 구현
-  //   };
-
-  //   // 컴포넌트 언마운트 시 WebSocket 연결 종료
-  //   return () => {
-  //     ws.close();
-  //   };
-  // }, []);
     let router = useRouter()
     return(
         <header>
