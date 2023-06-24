@@ -16,7 +16,10 @@ export const userApi = createApi({
     }),
   }),
 });
-
+export const setDATA = dog => ({
+  type: "SET_DATA",
+  payload: dog,
+});
 const store = configureStore({
   reducer: {
     [userApi.reducerPath]: userApi.reducer,
