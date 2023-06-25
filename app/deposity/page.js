@@ -7,6 +7,8 @@ import Expalne from "./Explan.js";
 // import Link from "next/link";
 import React from "react"
 
+export const revalidate = 60;
+
 export default async function deposit(){
     const dbY = (await connectDB).db('yegum');
     let resultY = await dbY.collection('yegum').find({ type: '정기예금' }).toArray();

@@ -9,6 +9,9 @@ import Benner from "./Benner.js"
 import React from "react"
 import Link from "next/link.js";
 
+
+
+export const revalidate = 60;
 export default async function Home(){
   
   const db = (await connectDB).db('jukgum');
@@ -17,8 +20,9 @@ export default async function Home(){
   const dbY = (await connectDB).db('yegum');
   let resultY = await dbY.collection('yegum').find().toArray();
 
-
   let sessions = await getServerSession(authOptions)
+
+  
 
   return(
     <div>
