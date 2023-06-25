@@ -4,7 +4,7 @@ import DepositBenner from "./DepositBenner"
 import DepositDetail from "./DepositDetail"
 import React from "react"
 
-
+export const revalidate = 60;
 export default async function depostidetail(){
     const dbYG = (await connectDB).db('jukgum');
     let result = await dbYG.collection('get').find({ type: '정기적금' }).toArray();

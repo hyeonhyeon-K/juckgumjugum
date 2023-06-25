@@ -4,6 +4,7 @@ import DepositBenner from "./DepositBenner.js"
 import DepositDetail from "./DepositDetail.js"
 import React from "react"
 
+export const revalidate = 60;
 
 export default async function depostidetail(){
     const dbYG = (await connectDB).db('yegum');
