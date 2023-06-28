@@ -66,7 +66,7 @@ export default async function deposit3d(props){
         </div>
         <div className="deposit3DBB">
             {/* <Link href={'/shoplist'}><button className="deposit3DB">장바구니</button></Link> */}
-            <Link href={'/mypage/buylist'} className="text-decorationw"><button className="deposit3DB1">가입하기</button></Link>
+            <Link href={`${result.link}`} className="text-decorationw"><button className="deposit3DB1">가입하기</button></Link>
             {/* <Link href={`${result.link}`} className="text-decorationw"><button className="deposit3DB1">은행 사이트</button></Link> */}
         </div>
         

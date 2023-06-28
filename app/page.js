@@ -5,9 +5,10 @@ import { connectDB } from "./util/database.js"
 import { FaAngleRight } from "react-icons/fa";
 import HomeCard from "./HomeCard.js"
 import HomeCardY from "./HomeCardY.js"
-import Benner from "./Benner.js"
 import React from "react"
 import Link from "next/link.js";
+import Image from "next/image"
+import frame1 from "../public/Frame 1.png"
 
 
 
@@ -26,7 +27,7 @@ export default async function Home(){
 
   return(
     <div>
-      <Benner></Benner>
+      <Image src={frame1} width={660} height={200} className="benner"/>
       <div>
 
       <div className="subtitleBox">
