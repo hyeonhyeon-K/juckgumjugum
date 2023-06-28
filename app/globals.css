@@ -766,8 +766,7 @@
   font-weight: 600;
 }
 .shopListContentC{
-  width: 300px;
-  margin-left: 20px;
+  width: 290px;
   color: #707070;
 }
 .shopListContentNum{
@@ -1014,7 +1013,6 @@
 .buyListFlexBox{
   width: 675px;
   height: 1px;
-  background-color: #BAB9B9;
   margin-bottom: 15px;
 }
 .mainBox{
@@ -1212,4 +1210,18 @@
 .text-decoration2{
   color: #000;
   text-decoration: none;
+}
+.buylistAlarm{
+  font-size: 30px;
+  font-weight: 500;
+  color:#585858;
+}
+.buyListDeleteForm{
+  text-align: center;
+  display: grid;
+}
+.buyListDelete{
+  font-size: 20px;
+  margin: 27px 0px 0px 10px;
+  color:#585858;
 }
