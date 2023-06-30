@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import {signIn} from "next-auth/react"
 // import { FaSearch } from "react-icons/fa";
 import React from "react"
+import Alram from "./Alram"
 
 
 
@@ -12,6 +13,7 @@ export default function Header(){
 
     return(
         <header>
+          <Alram/>
           <div className='headerbox'>
           <div className='title' onClick={()=>{router.push('/') }}>적금 저금 </div>
             <div className='login'>
@@ -19,7 +21,7 @@ export default function Header(){
             </div>
           </div> 
             <div className='headerMenu'>
-              <div id='headerMenuBoxHome' onClick={()=>{router.push('/') }}>홈</div>
+              <div id='headerMenuBox' onClick={()=>{router.push('/') }}>홈</div>
               <div id='headerMenuBox' onClick={()=>{router.push('/deposit') }}>적금</div>
               <div id='headerMenuBox' onClick={()=>{router.push('/deposity') }}>예금</div>
               {/* <div id='headerMenuBox' onClick={()=>{router.push('/') }}>소개</div>   */}

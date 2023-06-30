@@ -6,7 +6,6 @@ import { getServerSession } from "next-auth"
 import React from "react"
 import Header from "./Header"
 import SingInHeader from "./SingInHeader"
-import Alram from "./Alram"
 import { Analytics } from '@vercel/analytics/react';
 
 
@@ -28,7 +27,6 @@ export default async function header({children}){
     <html lang="en">
     <body >
       <div className='headerdiv'>
-      <Alram/>
         { session ?<SingInHeader/>  :<Header/> }
           <Providers>{children} <Analytics/> </Providers>
 

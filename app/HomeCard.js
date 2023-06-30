@@ -2,9 +2,8 @@
 
 // import { FaAngleRight } from "react-icons/fa";
 import Image from 'next/image'
-import { useRouter } from "next/navigation";
 import React from "react"
-// import Link from 'next/link';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 
@@ -29,7 +28,7 @@ export default function Home(props){
       <div className="MainContentBox" />
       <div className="subTitle">
         {/* 여기서부터 map */}
-        <div onClick={()=>{router.push(`/detail/${modifiedResult[i]._id}`) }}>
+        <Link href={`/detail/${modifiedResult[i]._id}`} className='text-decoration'>
           {/* <div className="subTitleFont"> 예금 </div>
           <FaAngleRight className="subTitleIcon"/> */}
           <div className="card">
@@ -61,13 +60,12 @@ export default function Home(props){
               </div>
             </div>
           </div>
-        </div>
+        </Link>
         {/* 아래는 예시 */}
       </div>
       
     </div>
   ))
-  let router = useRouter()
   return(
      <>
       {datamap}
