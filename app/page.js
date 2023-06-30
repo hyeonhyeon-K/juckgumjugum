@@ -11,7 +11,6 @@ import Image from "next/image"
 import frame1 from "../public/Frame 1.png"
 
 
-
 export const revalidate = 60;
 export default async function Home(){
   
@@ -52,9 +51,9 @@ export default async function Home(){
       </div>
 
       {sessions ?  <div className='createy'>
-        <Link href={'/create'} className="text-decoration">
+        <Link href={'/create'} prefetch={false} className="text-decoration">
         <button className='createButtonMain'>적금 등록</button></Link>
-        <Link href={'/createye'} className="text-decoration">
+        <Link href={'/createye'}  prefetch={false} className="text-decoration">
         <button className='createButtonMain1'>예금 등록</button></Link>
         </div>
         : <div/>}

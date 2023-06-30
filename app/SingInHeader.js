@@ -29,9 +29,9 @@ export default async function Header(){
               <div id='headerMenuBox' onClick={()=>{router.push('/deposit') }}>적금</div>
               <div id='headerMenuBox' onClick={()=>{router.push('/deposity') }}>예금</div>
               {/* <div id='headerMenuBox' onClick={()=>{router.push('/') }}>소개</div> */}
-                <div className='searchBox'>
+                {/* <div className='searchBox'>
                   <div id='headerMenuSearchBox'></div>
-                </div>
+                </div> */}
             </div>
         </header>
     )

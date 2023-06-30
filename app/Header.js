@@ -2,13 +2,14 @@
 
 import { useRouter } from "next/navigation";
 import {signIn} from "next-auth/react"
-import { FaSearch } from "react-icons/fa";
+// import { FaSearch } from "react-icons/fa";
 import React from "react"
 
 
-export default function Header(){
 
-    let router = useRouter()
+export default function Header(){
+  let router = useRouter()
+
     return(
         <header>
           <div className='headerbox'>
@@ -22,9 +23,9 @@ export default function Header(){
               <div id='headerMenuBox' onClick={()=>{router.push('/deposit') }}>적금</div>
               <div id='headerMenuBox' onClick={()=>{router.push('/deposity') }}>예금</div>
               {/* <div id='headerMenuBox' onClick={()=>{router.push('/') }}>소개</div>   */}
-                <div className='searchBox'>
+                {/* <div className='searchBox'>
                   <div id='headerMenuSearchBox'><FaSearch id="serchIcon"/></div>
-                </div>
+                </div> */}
             </div>
         </header>
         

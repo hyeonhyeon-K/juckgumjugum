@@ -1225,3 +1225,44 @@
   margin: 27px 0px 0px 10px;
   color:#585858;
 }
+.alramDiv{
+  position: absolute;
+  display: flex;
+  margin-left: 900px;
+  z-index:1;
+}
+.alramBody{
+  display: block;
+  height: 120px;
+  width: 300px;
+  background-color: #FFFFFF;
+  border: solid 1px #BAB9B9;
+  border-radius: 13px;
+}
+.alramHeader{
+  display: flex;
+  height: 40px;
+  width: 300px;
+  background-color: #2649FF;
+  border-radius: 12px 12px 0px 0px ;
+}
+.alramTitle{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-left: 13px;
+  color: #FFE500;
+}
+.alramContent{
+  height: 78px;
+  width: 340px;
+  display: flex;
+  padding: 5px;
+  margin: 4px 0px 0px 7px;
+  font-size: 27px;
+  font-weight: 550;
+  text-align: start;
+  color: #000000;
+
+
+}
