@@ -43,7 +43,7 @@ export default function DepositDetail(props){
                 <div className='depositdetailbuttonbox'>
                 {/* <Link href={'/shoplist'} ><button id='depositdetailbuttonboxLink'>장바구니 추가</button></Link> */}
                 <Link href={`${a.link}`} ><button id='depositdetailbuttonboxLink'>가입하기</button></Link>
-                <Link href={'https://www.kbstar.com/'} ><button id='depositdetailbuttonboxLink'>은행사이트</button></Link>
+                <Link href={`${a.link}`} ><button id='depositdetailbuttonboxLink'>은행사이트</button></Link>
                 </div>
                 </div>
 
