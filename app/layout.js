@@ -7,6 +7,7 @@ import React from "react"
 import Header from "./Header"
 import SingInHeader from "./SingInHeader"
 import Alram from "./Alram"
+import { Analytics } from '@vercel/analytics/react';
 
 
 // import Footer from './Footer';
@@ -29,7 +30,7 @@ export default async function header({children}){
       <div className='headerdiv'>
       <Alram/>
         { session ?<SingInHeader/>  :<Header/> }
-          <Providers>{children}</Providers>
+          <Providers>{children} <Analytics/> </Providers>
 
       </div>
     {/* <Footer/> */}
