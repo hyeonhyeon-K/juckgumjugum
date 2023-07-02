@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb'
 
-const url = 'mongodb+srv://jklgus08:kim123@jaeheyon.oyquwtr.mongodb.net/'
+const url = process.env.NEXT_PUBLIC_MONGODB_URL
 const options = { useNewUrlParser: true }
 let connectDB
 

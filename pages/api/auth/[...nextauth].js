@@ -13,8 +13,8 @@ export const authOptions = {
     //     clientSecret: 'fdd983a33370cd3e8601eb672120746b0fa13c3c',
     // }),
     GoogleProvider({
-        clientId: '796286147852-qgqsh8ioirif0785qenhpto3rovtqrm6.apps.googleusercontent.com',
-        clientSecret: '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',
+        clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
+        clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SK,
         authorization: {
             params: {
               prompt: "consent",
