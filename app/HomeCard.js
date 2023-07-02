@@ -24,7 +24,7 @@ export default function Home(props){
 
 
   const datamap = modifiedResult.slice(0, 3).map((a,i) => (
-<div className="body" key={a}>
+    <div className="body" key={i}>
       <div className="MainContentBox" />
       <div className="subTitle">
         {/* 여기서부터 map */}

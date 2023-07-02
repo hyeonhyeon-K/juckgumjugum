@@ -16,10 +16,16 @@ export default async function Home(){
   
   const db = (await connectDB).db('jukgum');
   let result = await db.collection('get').find().toArray();
-
+  result = result.map((a)=>{
+    a._id = a._id.toString()
+    return a
+  })
   const dbY = (await connectDB).db('yegum');
   let resultY = await dbY.collection('yegum').find().toArray();
-
+  resultY = resultY.map((a)=>{
+    a._id = a._id.toString()
+    return a
+  })
   let sessions = await getServerSession(authOptions)
 
   

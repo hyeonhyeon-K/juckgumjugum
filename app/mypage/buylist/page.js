@@ -8,8 +8,11 @@ export default async function Buylist(){
     const session = await getServerSession(authOptions)
     const userEmail = session.user.email
     const db = (await connectDB).db('jukgum');
-    const result = await db.collection('get').find({ author : userEmail }).toArray();
-
+    let result = await db.collection('get').find({ author : userEmail }).toArray();
+    result = result.map((a)=>{
+        a._id = a._id.toString()
+        return a
+      })
     return(
         <div>
             <BuyList result={result}/>

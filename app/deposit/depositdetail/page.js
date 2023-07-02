@@ -8,7 +8,11 @@ export const revalidate = 60;
 export default async function depostidetail(){
     const dbYG = (await connectDB).db('jukgum');
     let result = await dbYG.collection('get').find({ type: '정기적금' }).toArray();
-
+    result = result.map((a)=>{
+        a._id = a._id.toString()
+        return a
+      })
+      
     let resultFilter = Array.isArray(result)
     ? result
         .filter((item, index, array) =>
