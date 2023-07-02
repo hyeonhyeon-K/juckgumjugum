@@ -12,10 +12,19 @@ export const revalidate = 60;
 export default async function deposit(){
     const dbY = (await connectDB).db('yegum');
     let resultY = await dbY.collection('yegum').find({ type: '정기예금' }).toArray();
-  
+    // _id 를 문자로 보내는 함수
+    resultY = resultY.map((a)=>{
+        a._id = a._id.toString()
+        return a
+      })
+
     const dbYG = (await connectDB).db('yegum');
     let resultYG = await dbYG.collection('yegum').find({ type: '종류예금' }).toArray();
-  
+
+    resultYG = resultYG.map((a)=>{
+        a._id = a._id.toString()
+        return a
+      })
 
     let resultFilter = Array.isArray(resultY)
     ? resultY

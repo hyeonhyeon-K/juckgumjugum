@@ -175,7 +175,6 @@
     margin-right: 16px;
     margin-bottom: 10px;
     height: 39px;
-    width: 210;
     margin-left: 17px;
     color: #585858;
   }
@@ -1263,12 +1262,15 @@
 }
 .alramContent{
   height: 78px;
-  width: 340px;
+  width: 290px;
   display: flex;
   padding: 5px;
-  margin: 4px 0px 0px 7px;
   font-size: 27px;
   font-weight: 550;
   text-align: start;
   color: #000000;
+}
+.alramContent > p{
+  margin: 0px;
+  padding: 5px;
 }
