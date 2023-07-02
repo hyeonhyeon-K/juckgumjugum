@@ -26,7 +26,7 @@ export default async function Home(){
 
   return(
     <div>
-      <Image src={frame1} width={660} height={200} alt={'benner'} className="benner"/>
+      <Image src={frame1} width={660} height={200} alt={'benner'}  loading="lazy" className="benner"/>
       <div>
 
       <div className="subtitleBox">
