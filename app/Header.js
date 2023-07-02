@@ -3,18 +3,14 @@
 import { useRouter } from "next/navigation";
 import {signIn} from "next-auth/react"
 // import { FaSearch } from "react-icons/fa";
-import React, {useEffect} from "react"
+import React from "react"
 import Alram from "./Alram"
 
 
 
 export default function Header(){
   let router = useRouter()
-  useEffect(()=>{
-    navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position)
-    });
-  },[])
+
  
     return(
         <header>
