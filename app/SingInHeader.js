@@ -13,7 +13,7 @@ export default async function Header(){
     };
   
     return(
-        <head>
+        <header>
           <div className='headerbox'>
           <h1 className='title' onClick={()=>{router.push('/') }}>적금 저금 </h1>
             <div className='login'>
@@ -33,6 +33,6 @@ export default async function Header(){
                   <div id='headerMenuSearchBox'></div>
                 </div> */}
             </div>
-        </head>
+        </header>
     )
 }
