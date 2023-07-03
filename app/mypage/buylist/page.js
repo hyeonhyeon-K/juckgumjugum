@@ -13,6 +13,7 @@ export default async function Buylist(){
         a._id = a._id.toString()
         return a
       })
+      // 적금의 email만 가져오고 있음
     return(
         <div>
             <BuyList result={result}/>

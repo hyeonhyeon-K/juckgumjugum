@@ -74,6 +74,5 @@ export default function Home(props){
   )
 }
 Home.propTypes = {
-  result: PropTypes.string.isRequired,
-  resultFF: PropTypes.string.isRequired,
+  result: PropTypes.array.isRequired,
 };

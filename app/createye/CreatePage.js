@@ -91,7 +91,7 @@ export default function Create() {
           <div>상품링크</div>
           <input className="createInputPoint1" name="link" required 
           min={1} maxLength={100} 
-          placeholder="ex) www.naver.com"
+          placeholder="ex) https://www.naver.com"
           type="url"
           title="https://나 http:// 를 포함해야 합니다. "
           />
