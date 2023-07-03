@@ -4,8 +4,7 @@ import { authOptions } from "./auth/[...nextauth].js"
 
 export default async function handler(req, res) {
   const session = await getServerSession(req, res, authOptions)
-  console.log(session)
-  
+
   if (session) {
     req.body.author = session.user.email
   }
