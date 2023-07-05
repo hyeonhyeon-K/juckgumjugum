@@ -75,4 +75,5 @@ export default function Home(props){
 }
 Home.propTypes = {
   result: PropTypes.array.isRequired,
+  
 };

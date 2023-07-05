@@ -4,7 +4,7 @@ import DeositFunctionGo from "./DepositFunctionGo.js"
 import DayDeposit from "./DayDeposit.js"
 import DayDepositGo from "./DayDepositGo.js"
 import Expalne from "./Explan.js";
-// import Link from "next/link";
+// import axios from "axios"
 import React from "react"
 
 export const revalidate = 60;
@@ -44,6 +44,9 @@ export default async function deposit(){
 
     const resultFF =  resultFilter
     const resultGo = resultFilterGo
+
+//     const api = await axios.get('https://finlife.fss.or.kr/finlifeapi/savingProductsSearch.json?auth=855905c0fb40765d5f0ee1cf2746ce6c&topFinGrpNo=020000&pageNo=1');
+// console.log(api.data.result.baseList[0])  
 
     return(
         <div>
