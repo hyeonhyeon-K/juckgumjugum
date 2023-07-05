@@ -10,12 +10,10 @@ export default async function detailehana(props){
 
     const jsonObject = JSON.parse(decodedString); // 문자열로 바뀌
     const productName = jsonObject.params.id;
-    console.log(productName)
 
     const JUK_URL = `https://finlife.fss.or.kr/finlifeapi/savingProductsSearch.json?auth=${process.env.API_KEY}&topFinGrpNo=020000&pageNo=1&financeCd=%ED%95%98%EB%82%98`
     // API 호출!
     const api = await axios.get(JUK_URL);
-        // console.log(api.data.result.baseList[2].kor_co_nm)  
     const bankProducts = api.data.result.baseList
     const bankProductOpt = api.data.result.optionList
 
@@ -23,7 +21,8 @@ export default async function detailehana(props){
     function combine(base, options) {
         return options.map(option => {
           const baseObj = base.find(item => item.fin_prdt_cd === option.fin_prdt_cd);
-          return { ...baseObj, ...option };
+          const combinedObj = baseObj ? { ...baseObj, ...option } : option;
+          return combinedObj;
         });
       }
       // optionList를 baseList와 합친 optional 배열 생성
