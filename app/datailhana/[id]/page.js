@@ -26,6 +26,7 @@ export default async function detailehana(props){
         });
       }
       // optionList를 baseList와 합친 optional 배열 생성
+      
       const optional = combine(bankProducts, bankProductOpt);
       // 이름이 같은 항목을 제거한 배열 생성
     //   const filterTitle = optional.filter((obj, index, arr) => {
