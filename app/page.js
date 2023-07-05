@@ -8,7 +8,6 @@ import React from "react"
 import Link from "next/link.js";
 import Image from "next/image"
 import frame1 from "../public/Frame 1.png"
-// import axios from "axios";
 
 export const revalidate = 60;
 
@@ -29,16 +28,10 @@ export default async function Home(){
   })
   let sessions = await getServerSession(authOptions)
 
-  // const api = await axios.get('https://finlife.fss.or.kr/finlifeapi/savingProductsSearch.json?auth=855905c0fb40765d5f0ee1cf2746ce6c&topFinGrpNo=020000&pageNo=1');
-
-  // const jukgum = api.data.result.baseList
-  // console.log(jukgum)
-
   return(
     <div>
       <Image src={frame1} width={660} height={200} alt={'benner'}  loading="lazy" className="benner"/>
       <div>
-
       <div className="subtitleBox">
         <Link href={'./deposit'} className="text-decoration">
           <div className="subTitleFont"> 적금 </div>
