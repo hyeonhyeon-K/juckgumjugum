@@ -10,7 +10,7 @@ export default async function depostidetail(){
     const JUK_URL = `https://finlife.fss.or.kr/finlifeapi/savingProductsSearch.json?auth=${process.env.API_KEY}&topFinGrpNo=020000&pageNo=1&financeCd=%ED%95%98%EB%82%98`
     // API 호출!
     const api = await axios.get(JUK_URL);
-        // console.log(api.data.result.baseList[2].kor_co_nm)  
+
     const bankProducts = api.data.result.baseList
     const bankProductOpt = api.data.result.optionList
 
@@ -22,7 +22,7 @@ export default async function depostidetail(){
         });
       }
       // optionList를 baseList와 합친 optional 배열 생성
-      const optional = combine(bankProducts, bankProductOpt);
+    const optional = combine(bankProducts, bankProductOpt);
       // 이름이 같은 항목을 제거한 배열 생성
     const filterTitle = optional.reduce((acc, obj) => {
     const isDuplicate = acc.some(item => item.fin_prdt_nm === obj.fin_prdt_nm);
