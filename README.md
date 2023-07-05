@@ -7,6 +7,7 @@
 - 배포 (Vercel)
 
 ### Tools
+- React
 - Next.js
 - Jaca Script
 - Axios
