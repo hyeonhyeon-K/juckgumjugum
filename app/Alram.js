@@ -22,7 +22,7 @@ export default function Header(){
                         <div className="alramTitle">알림</div>
                     </div>
                     <div className="alramContent">
-                        <p>반가워요! 로그인 후 글을 <br/>작성해  보시겠어요? </p>
+                        <p>반가워요! 로그인 후 글을 작성해  보시겠어요? </p>
                     </div>
                 </div>
             </div>
