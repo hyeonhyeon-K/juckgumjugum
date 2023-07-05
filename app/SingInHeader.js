@@ -11,7 +11,7 @@ export default async function Header(){
       await signOut({ callbackUrl: "/" });
       router.push("/");
     };
-  
+   
     return(
         <header>
           <div className='headerbox'>
