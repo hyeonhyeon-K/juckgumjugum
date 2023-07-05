@@ -477,6 +477,7 @@
   }
   .depositdetailboxS1{
       margin-left: 20px;
+      width: 115px;
   }
   .ddbs2{
       display: flex;
@@ -512,7 +513,7 @@
   }
   .ddcontentTag{
       height: 21px;
-      width: 108px;
+      text-align: center;
       font-size: 15px;
       font-weight: 400;
       border-color: rgba(0, 0, 0, 0);
@@ -522,7 +523,7 @@
   }
   .ddcontentTag1{
       height: 21px;
-      width: 108px;
+      text-align: center;
       margin-left: 10px;
       font-size: 15px;
       font-weight: 400;
@@ -539,6 +540,11 @@
       margin-top: 5px;
       font-size: 20px;
       color: #585858;
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .ddcontentInfbox{
       display: flex;
@@ -547,7 +553,6 @@
       font-size: 17px;
   }
   .ddcontentInfboxSub{
-    margin-left: 13px;
     font-size: 15px;
   }
   
@@ -569,7 +574,6 @@
       color:#ffffff;
   }
   .deposit3dbox{
-      height: 700px;
       width: 950px;
       margin: 30px 0px 0px 180px;
       border: solid 1px #969696;
@@ -598,7 +602,6 @@
   .deposit3dButton{
       display: block;
       height: 40px;
-      width: 157px;
       font-size: 22px;
       font-weight: 500;
       color: #FFFFFF;
@@ -609,7 +612,6 @@
   .deposit3dButton1{
       display: block;
       height: 40px;
-      width: 157px;
       margin-left: 30px;
       font-size: 22px;
       font-weight: 500;
@@ -648,7 +650,7 @@
       color: #2649FF;
   }
   .d3dBTI{
-      margin: 20px 0px 0px 80px;
+      margin: 10px 0px 0px 0px;
       color: #969696;
   }
   .d3dBTID{
@@ -1273,4 +1275,12 @@
 .alramContent > p{
   margin: 0px;
   padding: 5px;
+}
+.contentbox{
+  height: 89px;
+  width: 490px;
+}
+.depositdetailboxapi{
+  display: flex;
+  margin: 30px 0px 0px 310px;
 }
