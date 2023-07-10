@@ -10,8 +10,7 @@ export default function Header(){
     const timer = setTimeout(()=>{setAlert(false)}, 2500);
     return ()=> {clearTimeout(timer)}
   }, []);
-
-
+  
     return(
         <div>
             {
