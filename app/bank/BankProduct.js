@@ -1,15 +1,11 @@
-'use client'
-
 // import Image from 'next/image'
 import Link from 'next/link'
 import Image from 'next/image';
 import React from "react"
 import PropTypes from 'prop-types';
 
-
 export default function BankProduct(props){
     const {filterTitle} = props;
-
   return(
     <>
         {

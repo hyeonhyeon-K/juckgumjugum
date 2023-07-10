@@ -7,6 +7,7 @@ import React from "react"
 import Header from "./Header"
 import SingInHeader from "./SingInHeader"
 import { Analytics } from '@vercel/analytics/react';
+import frame from '../public/Frame 1.png'
 
 
 // import Footer from './Footer';
@@ -27,7 +28,19 @@ export default async function header({children}){
     <html lang="en">
     <body >
       <div className='headerdiv'>
-        { session ?<SingInHeader/>  :<Header/> }
+        { session ?<SingInHeader>
+        <meta name="juckgum" content="My juckgum 적금저금" />
+        <meta name="Keywords" content="적금,예금, 적금저금" />
+        <meta property="og:title" content="적금저금" />
+        <meta property="og:description" content="juckgum share page 내가 만든적금을 공유할 수 있는 페이지" />
+        <meta property="og:image" content={frame} />
+        </SingInHeader>  :<Header>
+        <meta name="juckgum" content="My juckgum 적금저금" />
+        <meta name="Keywords" content="적금,예금,적금저금" />
+        <meta property="og:title" content="적금저금" />
+        <meta property="og:description" content="juckgum share page 내가 만든 적금을 공유할 수 있는 페이지" />
+        <meta property="og:image" content={frame} />
+        </Header> }
           <Providers>{children} <Analytics/> </Providers>
 
       </div>
