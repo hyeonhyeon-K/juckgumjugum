@@ -27,9 +27,17 @@ yarn-error.log*
 # local env files
 # .env
 
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# google 
+/build
+/public/robots.txt
+/public/sitemap*.xml
+/public/googled38b73d1271b1b5a.html
+/public/naver22ac95a9e31c564e9dce43d5df7c0a02.html
