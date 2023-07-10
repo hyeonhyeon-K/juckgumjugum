@@ -7,8 +7,7 @@ https://youtu.be/jzgXqgv8tAc
 <br/>
 ### 배포
 배포 링크 : https://juckgum.com <br/>
-배포: <img src="https://img.shields.io/badge/vercel-black?style=for-the-badge&logo=vercel&logoColor=white"/> 
-
+배포:  Vercel
 ### DB
 <img src="https://img.shields.io/badge/mongodb-green?style=for-the-badge&logo=mongodb&logoColor=white"/> 
 
