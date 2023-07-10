@@ -4,14 +4,14 @@
 한줄 소개 : 실제 은행의 상품도 보고 사람들과 공유하고 싶은 적금과 예금을 공유해보세요!
 <br/>
 배포 링크 : https://juckgum.com
-- 배포 (Vercel)
+### 배포
+<img src="https://img.shields.io/badge/vercel-black?style=for-the-badge&logo=vercel&logoColor=white"/> 
 
 ### DB
-- mongoDB
+<img src="https://img.shields.io/badge/mongodb-green?style=for-the-badge&logo=mongodb&logoColor=white"/> 
 
 <br/>
 
-### <span style=""> 🖥 **사용 툴** </span>
-| Html | CSS | JavaScript | React | Styled-<br>Components | axios |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| <img alt="Html" src ="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/440px-HTML5_logo_and_wordmark.svg.png" width="65" height="65" /> | <div style="display: flex; align-items: flex-start;"><img src="https://user-images.githubusercontent.com/111227745/210204643-4c3d065c-59ec-481d-ac13-cea795730835.png" alt="CSS" width="50" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="75" height="75" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://styled-components.com/logo.png" alt="styled-components icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://axios-http.com/assets/logo.svg" width="65" height="65"/></div> |
+### 사용툴
+<img src="https://img.shields.io/badge/next.js-black?style=for-the-badge&logo=next.js&logoColor=white"/> <img src="https://img.shields.io/badge/react-blue?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/html5-orange?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3-blue?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/styledcomponents-pink?style=for-the-badge&logo=styledcomponents&logoColor=balck"/> <img src="https://img.shields.io/badge/axios-purple?style=for-the-badge&logo=axios&logoColor=white"/> <img src="https://img.shields.io/badge/figma-orange?style=for-the-badge&logo=figma&logoColor=white"/>
+
