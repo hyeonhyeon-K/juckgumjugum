@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://juckgum.comL
+
+# Sitemaps
+Sitemap: https://juckgum.comL/sitemap.xml
