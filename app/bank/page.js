@@ -23,7 +23,7 @@ export default async function depostidetail(){
       }
       // optionList를 baseList와 합친 optional 배열 생성
     const optional = combine(bankProducts, bankProductOpt);
-      // 이름이 같은 항목을 제거한 배열 생성
+      // 이름이 같은 항목만 남기는 배열 생성
     const filterTitle = optional.reduce((acc, obj) => {
     const isDuplicate = acc.some(item => item.fin_prdt_nm === obj.fin_prdt_nm);
     if (!isDuplicate) {
