@@ -7,8 +7,7 @@ import React from "react"
 import Header from "./Header"
 import SingInHeader from "./SingInHeader"
 import { Analytics } from '@vercel/analytics/react';
-import Head from 'next/head';
-import frame from '../public/Frame 1.png'
+import frame from '../public/Frame1.png'
 
 export const metadata = {
   title: '적금저금',
@@ -41,15 +40,6 @@ export default async function header({children}){
 
   return(
     <html lang="en">
-       <Head>
-      <title>적금저금</title>
-      <meta name="description" content="적금과 예금을 공유하세요" />
-      <meta property="og:url" content='https://juckgum.com' />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content='적금저금' />
-      <meta property="og:description" content='적금과 예금을 공유하고 은행 상품을 보세요!' />
-      <meta property="og:image" content={frame} />
-    </Head>
     <body >
       <div className='headerdiv'>
         { session ?<SingInHeader>

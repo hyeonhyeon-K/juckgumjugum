@@ -7,7 +7,7 @@ import HomeCardY from "./HomeCardY.js"
 import React from "react"
 import Link from "next/link.js";
 import Image from "next/image"
-import frame1 from "../public/Frame 1.png"
+import frame1 from "../public/Frame1.png"
 
 export const revalidate = 60;
 
