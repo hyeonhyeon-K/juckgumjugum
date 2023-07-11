@@ -7,15 +7,19 @@ import React from "react"
 export const revalidate = 60;
 export default async function depostidetail(){
     const dbYG = (await connectDB).db('yegum');
-    let result = await dbYG.collection('yegum').find({ type: '정기예금' }).toArray();
-    result = result.map((a)=>{
-        a._id = a._id.toString()
-        return a
-      })
+
+const [result] = await Promise.all([
+  dbYG.collection('yegum').find({ type: '정기예금' }).toArray()
+]);
+
+const mappedResult = result.map((a) => {
+  a._id = a._id.toString();
+  return a;
+});
     return(
         <div>
             <DepositBenner/>
-            <DepositDetail result ={result}/>
+            <DepositDetail result ={mappedResult}/>
         </div>
     )
 }

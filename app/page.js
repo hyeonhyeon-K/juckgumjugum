@@ -15,17 +15,23 @@ export const revalidate = 60;
 export default async function Home(){
   
   const db = (await connectDB).db('jukgum');
-  let result = await db.collection('get').find().toArray();
-  result = result.map((a)=>{
-    a._id = a._id.toString()
-    return a
-  })
   const dbY = (await connectDB).db('yegum');
-  let resultY = await dbY.collection('yegum').find().toArray();
-  resultY = resultY.map((a)=>{
-    a._id = a._id.toString()
-    return a
-  })
+  
+  const [result, resultY] = await Promise.all([
+    db.collection('get').find().toArray(),
+    dbY.collection('yegum').find().toArray()
+  ]);
+  
+  const mappedResult = result.map((a) => {
+    a._id = a._id.toString();
+    return a;
+  });
+  
+  const mappedResultY = resultY.map((a) => {
+    a._id = a._id.toString();
+    return a;
+  });
+  
   let sessions = await getServerSession(authOptions)
 
   return(
@@ -39,7 +45,7 @@ export default async function Home(){
         </Link>
       </div>
       <div className="mainBox">
-        <HomeCard result={result}/>
+        <HomeCard result={mappedResult}/>
       </div>
       
 
@@ -50,7 +56,7 @@ export default async function Home(){
         </Link>
       </div>
       <div className="mainBox">
-        <HomeCardY resultY={resultY}/>
+        <HomeCardY resultY={mappedResultY}/>
       </div>
 
       {sessions ?  <div className='createy'>

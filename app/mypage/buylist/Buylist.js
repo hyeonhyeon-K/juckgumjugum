@@ -3,10 +3,14 @@ import { FaShoppingBasket } from "react-icons/fa";
 import Image from 'next/image'
 import React from "react"
 import {useRouter} from 'next/navigation'
+import PropTypes from 'prop-types';
 
-export default function Mypage(result){
-    const mypagemap = result.result
+export default function Mypage(props){
+    // const {resultY} = props;
+    const {result} = props;
+    const mypagemap = result
     const router = useRouter()
+     // 예금과 적금 합치는 함수 필요함 
 
   return(
     <div>
@@ -83,3 +87,6 @@ export default function Mypage(result){
         </div>
   )
 }
+Mypage.propTypes = {
+    result: PropTypes.array.isRequired,
+  };
