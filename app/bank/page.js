@@ -13,7 +13,8 @@ export default async function depostidetail(){
 
     const bankProducts = api.data.result.baseList
     const bankProductOpt = api.data.result.optionList
-
+    
+    
     // 적금 목록과 option 합치는 함수
     function combine(base, options) {
         return options.map(option => {
