@@ -98,7 +98,7 @@
   }
   .subTitleFont{
     display: block;
-    margin:20px 0px 0px 130px;
+    margin:0px 0px 0px 130px;
     font-size: 30px;
     font-weight: 600;
   }
@@ -113,11 +113,12 @@
     position: relative;
     height: 27px;
     width: 30px;
-    margin:29px 0px 0px 28px;
+    margin: 0px 0px 0px 28px;
   }
   .subtitleBox{
     display: flex;
     align-items: center;
+    margin-top:10px;
     margin-left: 50px;
 
   }
@@ -1193,6 +1194,7 @@
 .text-decoration{
   text-decoration: none;
   display: flex;
+  align-items: center;
   color: #000;
 }
 .text-decorationw{
