@@ -512,7 +512,7 @@
       border-radius: 60px;
   }
   .ddcontentTag{
-      height: 21px;
+      height: 24px;
       text-align: center;
       font-size: 15px;
       font-weight: 400;
@@ -522,7 +522,7 @@
       color:#ffffff;
   }
   .ddcontentTag1{
-      height: 21px;
+      height: 24px;
       text-align: center;
       margin-left: 10px;
       font-size: 15px;
@@ -543,14 +543,14 @@
       overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
   .ddcontentInfbox{
       display: flex;
       color: #BAB9B9;
       margin: 0px 0px 0px 350px;
-      font-size: 17px;
+      font-size: 16px;
   }
   .ddcontentInfboxSub{
     font-size: 15px;
