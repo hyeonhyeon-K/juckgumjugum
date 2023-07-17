@@ -9,11 +9,29 @@
   header{
     width: 1280px;
   }
+  @media only screen and (max-width: 480px) {
+    .headerdiv{
+      display: block;
+      margin:0 auto;
+      width: 480px;
+    }
+    header{
+      width: 480px;
+    }
+  }
   .headerbox{
     display: flex;
     align-items: center;
     margin-top: 20px;
     margin-left: 180px;
+  }
+  @media only screen and (max-width: 480px) {
+    .headerbox{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
   }
   .title{
     display: flex;
@@ -21,6 +39,15 @@
     font-weight: 600;
     color: #0060F1;
     margin: 0px
+  }
+  @media only screen and (max-width: 480px) {
+    .title{
+      display: flex;
+      font-size: 37px;
+      font-weight: 600;
+      color: #0060F1;
+      margin-left: 15px;
+    }
   }
   .login{
     display: inline-block;
@@ -39,11 +66,27 @@
     margin-left: 135px;
     height: 40px;
   }
+  @media only screen and (max-width: 480px) {
+    .headerMenu{
+      display: flex;
+      position: relative;
+      margin-left: 0px;
+      height: 40px;
+    }
+  }
   #headerMenuBox{
     margin-top: 10px;
     margin-left: 50px;
     font-size: 25px;
     font-weight: 600;
+  }
+  @media only screen and (max-width: 480px) {
+    #headerMenuBox{
+      margin-top: 10px;
+      margin-left: 20px;
+      font-size: 25px;
+      font-weight: 600;
+    }
   }
   .searchBox{
     flex-grow: 1;
@@ -80,6 +123,12 @@
     display: inline-flex;
     height: 280px;
   }
+  @media only screen and (max-width: 480px) {
+    .body{
+      display: inline-flex;
+      height: 155px;
+    }
+  }
   .benner{
     height: 300px;
     width: 960px;
@@ -87,20 +136,50 @@
     margin-left: 180px;
     background-color:#D9D9D9;
   }
+  @media only screen and (max-width: 480px) {
+    .benner{
+      height: 140px;
+      width: 340px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      background-color:#D9D9D9;
+    }
+  }
   .MainContentBox{
     height: 350px;
     width: auto;
     margin-top: 10px;
     background-color:#D9D9D9;
   }
+  @media only screen and (max-width: 480px) {
+    .subTitle{
+      margin-left: 5px;
+      height: 100px;
+    }
+  }
   .subTitle{
     margin-left: 20px;
+  }
+  @media only screen and (max-width: 480px) {
+    .subTitle{
+      margin-left: 5px;
+      height: 100px;
+    }
   }
   .subTitleFont{
     display: block;
     margin:20px 0px 0px 130px;
     font-size: 30px;
     font-weight: 600;
+  }
+  @media only screen and (max-width: 480px) {
+    .subTitleFont{
+      display: block;
+      margin: 0px 0px 0px 0px;
+      font-size: 25px;
+      font-weight: 600;
+    }
   }
   .subTitleFont1{
     display: inline-block;
@@ -115,11 +194,26 @@
     width: 30px;
     margin:20px 0px 0px 28px;
   }
+  @media only screen and (max-width: 480px) {
+    .subTitleIcon{
+      display: block;
+      position: relative;
+      height: 27px;
+      width: 30px;
+      margin:0px 0px 0px 10px;
+    }
+  }
   .subtitleBox{
     display: flex;
     align-items: center;
     margin-left: 50px;
-
+  }
+  @media only screen and (max-width: 480px) {
+    .subtitleBox{
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
   }
   .productCard{
     display: block;
@@ -131,6 +225,16 @@
     border: 1px solid #969696;
     border-radius: 10px;
   }
+  @media only screen and (max-width: 480px) {
+    .productCard{
+      width: 106px;
+      height: 140px;
+      margin-top: 8px;
+      border: 1px solid #969696;
+      padding: 1px;
+      border-radius: 10px;
+    }
+  }
   .productHeader{
     display: flex;
     align-items: center;
@@ -139,15 +243,41 @@
     margin-left: 10px;
     flex-grow: 1;
   }
+  @media only screen and (max-width: 480px) {
+    .productHeader{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-left: 0px;
+    }
+  }
   .productImg{
     display: inline-block;
     border-radius: 50px;
     margin-left: 10px;
   }
+  @media only screen and (max-width: 480px) {
+    .productImg{
+      display: inline-block;
+      border-radius: 50px;
+      margin-left: 10px;
+      height: 35px;
+      width: 35px;;
+    }
+  }
   .productTitle{
     margin-right: 10px;
     font-size: 28px;
     font-weight: 700;
+  }
+  @media only screen and (max-width: 480px) {
+    .productTitle{
+      display: flex;
+      margin-right: 10px;
+      font-size: 12px;
+      font-weight: 700;
+    }
   }
   .productSub{
     display: flex;
@@ -158,13 +288,37 @@
     margin-bottom: 10px;
     margin-left: 10px;
   }
+  @media only screen and (max-width: 480px) {
+    .productSub{
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      margin-top: 3px;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      margin-left: 3px;
+    }
+  }
   .productSubTitle{
     margin-left: 9px;
     font-weight: 400;
     color: #585858;
   }
+  @media only screen and (max-width: 480px) {
+    .productSubTitle{
+      margin-left: 1px;
+      font-size: 8px;
+      color: #000;
+    }
+  }
   .productSubTitle1{
     color: #585858;
+  }
+  @media only screen and (max-width: 480px) {
+    .productSubTitle1{
+      font-size: 12px;
+      color: #585858;
+    }
   }
   .productSubMain{
     overflow: hidden;
@@ -178,10 +332,32 @@
     margin-left: 17px;
     color: #585858;
   }
+  @media only screen and (max-width: 480px) {
+    .productSubMain{
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      display: -webkit-box; 
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      margin-right: 1px;
+      margin-bottom: 0px;
+      font-size: 12px;
+      height: 30px;
+      margin-left: 5px;
+      color: #585858;
+    }
+  }
   .productSubMainSub{
     margin-left: 20px;
     font-size: 13px;
     color:#969696
+  }
+  @media only screen and (max-width: 480px) {
+    .productSubMainSub{
+      margin-left: 18px;
+      font-size: 9px;
+      color:#969696
+    }
   }
   .productMainBox{
     display: flex;
@@ -189,6 +365,14 @@
 
     margin-bottom: 10px;
     margin-left: 10px;
+  }
+  @media only screen and (max-width: 480px) {
+    .productMainBox{
+      display: flex;
+      font-size: 18px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
   }
   .productMain{
     display: flex;
@@ -201,11 +385,29 @@
     margin-left: 10px;
     color: #0060F1;
   }
+  @media only screen and (max-width: 480px) {
+    .productMainNum{
+      font-size: 27px;
+      font-weight: 600;
+      margin-left: 8px;
+      color: #0060F1;
+    }
+  }
   .productMainNumper{
     font-size: 25px;
     font-weight: 600;
     margin-top: 30px;
     color: #0060F1;
+  }
+  @media only screen and (max-width: 480px) {
+    .productMainNumper{
+      font-size: 13px;
+      height: 10px;
+      font-weight: 600;
+      margin-top: 13px;
+      margin-left: 1px;
+      color: #0060F1;
+    }
   }
   .productEx{
     flex-grow: 1;
@@ -216,6 +418,17 @@
     align-items: center;
     padding-bottom: 10px;
   }
+  @media only screen and (max-width: 480px) {
+    .productEx{
+      display: flex;
+      font-size: 10px;
+      flex-direction: column;
+      margin-top: 0px;
+      margin-left: 0px;
+      align-items: center;
+      padding-bottom: 0px;
+    }
+  }
   .productExNum{
     color: #BAB9B9;
   }
@@ -224,9 +437,22 @@
     font-size: 15px;
     color: #BAB9B9;
   }
+  @media only screen and (max-width: 480px) {
+    .productExM{
+      margin-top: 0px;
+      font-size: 10px;
+      color: #BAB9B9;
+    }
+  }
   .card{
     margin-left: 30px;
     display: flex;
+  }
+  @media only screen and (max-width: 480px) {
+    .card{
+      margin-left: 0px;
+      display: flex;
+    }
   }
   .loginbody{
     display: flex;
@@ -1028,6 +1254,16 @@
   margin-left: 150px;
   margin-bottom: -90px;
 }
+@media only screen and (max-width: 480px) {
+  .mainBox{
+    display: grid;
+    width: 360px;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 0px;
+    margin-bottom: 0px;
+    height: 160px;
+  }
+}
 .createBox{
   display: flex;
   align-items: flex-end;
@@ -1237,8 +1473,9 @@
 .alramDiv{
   position: absolute;
   display: flex;
-  margin-left: 900px;
   z-index:1;
+  margin-top: 40px;
+  margin-left: 870px;
 }
 .alramBody{
   display: block;
