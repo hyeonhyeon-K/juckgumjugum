@@ -169,7 +169,7 @@
   }
   .subTitleFont{
     display: block;
-    margin:20px 0px 0px 130px;
+    margin:0px 0px 0px 130px;
     font-size: 30px;
     font-weight: 600;
   }
@@ -192,7 +192,7 @@
     position: relative;
     height: 27px;
     width: 30px;
-    margin:20px 0px 0px 28px;
+    margin: 0px 0px 0px 28px;
   }
   @media only screen and (max-width: 480px) {
     .subTitleIcon{
@@ -206,6 +206,7 @@
   .subtitleBox{
     display: flex;
     align-items: center;
+    margin-top:10px;
     margin-left: 50px;
   }
   @media only screen and (max-width: 480px) {
@@ -738,7 +739,7 @@
       border-radius: 60px;
   }
   .ddcontentTag{
-      height: 21px;
+      height: 24px;
       text-align: center;
       font-size: 15px;
       font-weight: 400;
@@ -748,7 +749,7 @@
       color:#ffffff;
   }
   .ddcontentTag1{
-      height: 21px;
+      height: 24px;
       text-align: center;
       margin-left: 10px;
       font-size: 15px;
@@ -769,14 +770,14 @@
       overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
   .ddcontentInfbox{
       display: flex;
       color: #BAB9B9;
       margin: 0px 0px 0px 350px;
-      font-size: 17px;
+      font-size: 16px;
   }
   .ddcontentInfboxSub{
     font-size: 15px;
@@ -1429,6 +1430,7 @@
 .text-decoration{
   text-decoration: none;
   display: flex;
+  align-items: center;
   color: #000;
 }
 .text-decorationw{
