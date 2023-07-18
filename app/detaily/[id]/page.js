@@ -13,7 +13,7 @@ export default async function deposit3d(props){
 
   
     return(
-        <div>
+        <div className="depositDiv">
             <div> 
         <div className="explanbody">
             <div className="expalnebox">

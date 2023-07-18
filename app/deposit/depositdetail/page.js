@@ -30,7 +30,7 @@ export default async function depostidetail(){
 
 
     return(
-        <div>
+        <div className="depositDiv">
             <DepositBenner/>
             <DepositDetail result ={result} resultFF={resultFF}/>
         </div>

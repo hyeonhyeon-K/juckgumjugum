@@ -17,7 +17,7 @@ export default async function depostidetail(){
       return a;
     });
     return(
-        <div>
+        <div className="depositDiv">
             <DepositBenner/>
             <DepositDetail resultYG ={mappedResultYG}/>
         </div>
