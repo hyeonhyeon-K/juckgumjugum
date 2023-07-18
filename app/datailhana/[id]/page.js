@@ -32,7 +32,7 @@ export default async function detailehana(props){
       const detailhana = optional.find(item => item.fin_prdt_nm === productName);
 
     return(
-        <div>
+        <div className="depositDiv">
             <div> 
         <div className="explanbody">
             <div className="expalnebox">

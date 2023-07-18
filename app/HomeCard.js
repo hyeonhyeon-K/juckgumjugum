@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from "react"
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-// import HomeCardstyles from './component/HomeCard.module.css'
+import styles from './component/HomeCard.module.css'
 
 
 
@@ -26,34 +26,34 @@ export default function Home(props){
 
 
   const datamap = modifiedResult.slice(0, 3).map((a,i) => (
-    <div className="body" key={i}>
-      <div className="subTitle">
+    <div className={styles.body} key={i}>
+      <div className={styles.subTitle}>
         {/* 여기서부터 map */}
         <Link href={`/detail/${modifiedResult[i]._id}`} className='text-decoration'>
           {/* <div className="subTitleFont"> 예금 </div>
           <FaAngleRight className="subTitleIcon"/> */}
-          <div className="card">
-            <div className="body">
-                <div className="subTitle">
-                  <div className="productCard">
-                  <div className="productHeader">
-                    <Image src={`/${modifiedResult[i].bank}.png`} alt={`${modifiedResult[i].bank}`} width={`${modifiedResult[i].cuk}`} height={`${modifiedResult[i].cuk}`} className="productImg"/>
-                    <div className="productTitle">{modifiedResult[i].title}</div>
+          <div className={styles.card}>
+            <div className={styles.body}>
+                <div className={styles.subTitle}>
+                  <div className={styles.productCard}>
+                  <div className={styles.productHeader}>
+                    <Image src={`/${modifiedResult[i].bank}.png`} alt={`${modifiedResult[i].bank}`} width={`${modifiedResult[i].cuk}`} height={`${modifiedResult[i].cuk}`} className={styles.productImg}/>
+                    <div className={styles.productTitle}>{modifiedResult[i].title}</div>
                   </div>
-                  <div className="productSub">
-                    <div className="productSubTitle">[{modifiedResult[i].tag1}]</div>
-                    <div className="productSubTitle1"> 내일 희망형 </div>
+                  <div className={styles.productSub}>
+                    <div className={styles.productSubTitle}>[{modifiedResult[i].tag1}]</div>
+                    <div className={styles.productSubTitle1}> 내일 희망형 </div>
                   </div>
-                  <div className="productSubMain">{modifiedResult[i].content}</div>
-                  <div className="productSubMainSub">최고 연</div>
-                  <div className="productMainBox">
-                    <div className="productMain">
-                      <div className="productMainNum">{modifiedResult[i].high}</div>
-                      <div className="productMainNumper">%</div>
+                  <div className={styles.productSubMain}>{modifiedResult[i].content}</div>
+                  <div className={styles.productSubMainSub}>최고 연</div>
+                  <div className={styles.productMainBox}>
+                    <div className={styles.productMain}>
+                      <div className={styles.productMainNum}>{modifiedResult[i].high}</div>
+                      <div className={styles.productMainNumper}>%</div>
                     </div>
-                    <div className="productEx">
-                      <div className="productExNum">기본 {modifiedResult[i].high}%</div>
-                      <div className="productExM">({modifiedResult[i].long}개월)</div>
+                    <div className={styles.productEx}>
+                      <div className={styles.productExNum}>기본 {modifiedResult[i].high}%</div>
+                      <div className={styles.productExM}>({modifiedResult[i].long}개월)</div>
                     </div>
                   </div>
                 </div>

@@ -17,7 +17,7 @@ const mappedResult = result.map((a) => {
   return a;
 });
     return(
-        <div>
+        <div className="depositDiv">
             <DepositBenner/>
             <DepositDetail result ={mappedResult}/>
         </div>

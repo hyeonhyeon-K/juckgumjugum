@@ -63,7 +63,7 @@ const mappedResultYG = resultYG.map((a) => {
     const resultGo = resultFilterGo
 
     return(
-        <div>
+        <div className="depositDiv">
             <Expalne/>
             <DayDeposit/>
                 <div className="depositBoxss">

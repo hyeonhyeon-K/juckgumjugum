@@ -1,4 +1,443 @@
-.body{
-    display: inline-flex;
-    height: 280px;
+.headerMenu {
+  display: flex;
+  position: relative;
+  margin-left: 19%;
+}
+.headers{
+  width: 100%;
+}
+.headerbox {
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+  margin-left: 22%;
+}
+#headerMenuBox {
+  margin-top: 1%;
+  margin-left: 4%;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.title {
+  display: flex;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #0060f1;
+  margin: 0;
+}
+.login {
+  display: inline-block;
+  font-size: 1vw;
+  color: #707070;
+  margin-left: 52%;
+}
+ @media only screen and (max-width: 425px) {
+    .headerdiv{
+      display: block;
+      margin: 0 auto;
+      justify-content: center;
+      width: 100%;
+    }
   }
+.loginBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerdiv {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+.benner{
+    height: 71%;
+    width: 71%;
+    margin-top: 1%;
+    background-color: #d9d9d9;
+}
+.alramDiv{
+  position: absolute;
+  display: flex;
+  z-index:1;
+  margin-top: 3%;
+  margin-left: 63%;
+}
+@media only screen and (max-width: 425px) {
+  .alramDiv{
+    position: absolute;
+    display: flex;
+    z-index:1;
+    margin-top: 3%;
+    margin-left: 63%;
+  }
+}
+.homediv {
+  width: 80%;
+  margin-left: 22%;
+}
+.subTitleFont {
+  display: block;
+  margin: 0;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.subTitleIcon {
+  display: block;
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  margin-left: 20%;
+}
+.subtitleBox {
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+}
+.mainBox {
+  display: grid;
+  justify-items: center;
+  width: 70%;
+  margin-left: 2.5%;
+  grid-template-columns: repeat(3,1fr);
+}
+.subtitleBox {
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+}
+.body{
+  display: inline-flex;
+  /* height: 280px; */
+}
+@media only screen and (max-width: 425px) {
+  .body{
+    display: inline-flex;
+    /* height: 280px; */
+  }
+}
+@media only screen and (max-width: 425px) {
+.subTitle{
+  /* margin-left: 20%; */
+}
+}
+.subTitle{
+  /* margin-left: 20%; */
+}
+@media only screen and (max-width: 425px) {
+  .subTitle{
+    margin-left: 5px;
+    height: 100px;
+  }
+}
+.card{
+  /* margin-left: 30px; */
+  display: flex;
+}
+@media only screen and (max-width: 425px) {
+  .card{
+    margin-left: 0px;
+    display: flex;
+  }
+}
+.productCard{
+  display: block;
+  position: relative;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  box-sizing: border-box;
+  width: 80%;
+  margin-top: 2%;
+  margin-right: 0px;
+  background-color: #ffffff;
+  border: 1px solid #969696;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1160px) {
+  .productCard{
+    /* width: 80%; */
+    /* height: 140px; */
+    margin-top: 8px;
+    border: 1px solid #969696;
+    padding: 1px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .productCard{
+    width: 90%;
+    height: 90%;
+    margin-top: 8px;
+    border: 1px solid #969696;
+    padding: 1px;
+    border-radius: 10px;
+  }
+}
+.productHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 2%;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 425px) {
+  .productHeader{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+  margin-left: 0px;
+  }
+}
+.productImg{
+  display: inline-block;
+  border-radius: 50px;
+  margin-left: 1%;
+  width: 20%;
+  height: 20%;
+}
+@media only screen and (max-width: 425px) {
+  .productImg{
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 10px;
+    height: 30%;
+    width: 30%;
+  }
+}
+.productTitle{
+  margin-right: 10px;
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+@media only screen and (max-width: 425px) {
+  .productTitle{
+    display: flex;
+    margin-right: 1%;
+    font-size: 2vw;
+    font-weight: 700;
+  }
+}
+.productSub{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1vw;
+  padding: 4%;
+}
+@media only screen and (max-width: 425px) {
+  .productSub{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+  }
+}
+/* ghjklghjkl; */
+.productSubTitle{
+  margin-left: 4%;
+  font-weight: 400;
+  color: #585858;
+}
+@media only screen and (max-width: 425px) {
+  .productSubTitle{
+    margin-left: 1px;
+    font-size: 1.3vw;
+    color: #000;
+  }
+}
+.productSubTitle1{
+  color: #585858;
+}
+
+@media only screen and (max-width: 620px) {
+  .productSubTitle1{
+    display: none;
+    color: #585858;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .productSubTitle1{
+    font-size: 11px;
+    color: #585858;
+  }
+}
+.productSubMain{
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  display: -webkit-box; 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-right: 3%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  /* height: 39px; */
+  color: #585858;
+  font-size: 1.3vw;
+}
+@media only screen and (max-width: 425px) {
+  .productSubMain{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-right: 1px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    height: 30px;
+    margin-left: 5px;
+    color: #585858;
+  }
+}
+.productSubMainSub{
+  margin-left: 10%;
+  font-size: 1vw;
+  color:#969696
+}
+@media only screen and (max-width: 425px) {
+  .productSubMainSub{
+    margin-left: 18px;
+    font-size: 9px;
+    color:#969696
+  }
+}
+ 
+.productMainBox{
+  display: flex;
+  /* font-size: 18px; */
+  align-items: flex-end;
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+@media only screen and (max-width: 425px) {
+  .productMainBox{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
+.productMain{
+  display: flex;
+  font-weight: 700;
+  align-items: baseline;
+}
+.productMainNum{
+  font-size: 4vw;
+  font-weight: 700;
+  /* margin-left: 10px; */
+  color: #0060F1;
+}
+@media only screen and (max-width: 425px) {
+  .productMainNum{
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #0060F1;
+  }
+}
+.productMainNumper{
+  font-size: 1.8vw;
+  font-weight: 600;
+  /* margin-top: 30px; */
+  color: #0060F1;
+}
+@media only screen and (max-width: 425px) {
+  .productMainNumper{
+    font-size: 13px;
+    height: 10px;
+    font-weight: 600;
+    margin-top: 13px;
+    margin-left: 1px;
+    color: #0060F1;
+  }
+}
+.productEx{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9vw;
+  /* margin-top: 16px; */
+  /* margin-left: 10px; */
+  align-items: center;
+  padding-bottom: 8%;
+}
+@media only screen and (max-width: 425px) {
+.productEx{
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 0px;
+  align-items: center;
+  padding-bottom: 0px;
+}
+}
+@media only screen and (max-width: 620px) {
+.productExNum{
+  color: #BAB9B9;
+  display: none;
+}
+}
+.productExNum{
+color: #BAB9B9;
+}
+.productExM{
+margin-top: 3px;
+color: #BAB9B9;
+}
+@media only screen and (max-width: 620px) {
+.productExM{
+  display: none;
+  margin-top: 0px;
+  font-size: 10px;
+  color: #BAB9B9;
+}
+}
+@media only screen and (max-width: 425px) {
+.productExM{
+  margin-top: 0px;
+  font-size: 10px;
+  color: #BAB9B9;
+}
+}
+.alramBody{
+  display: block;
+  height: 10%;
+  width: 60%;
+  background-color: #FFFFFF;
+  border: solid 1px #BAB9B9;
+  border-radius: 13px;
+}
+.alramHeader{
+  display: flex;
+  height: 4%;
+  width: 100%;
+  background-color: #2649FF;
+  border-radius: 12px 12px 0px 0px ;
+}
+.alramTitle{
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-top: 2%;
+  margin-left: 4%;
+  color: #FFE500;
+}
+.alramContent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1%;
+  font-size: 2vw;
+  font-weight: 550;
+  text-align: start;
+  color: #000000;
+}
+.alramContent > p{
+  margin: 0px;
+  padding: 5px;
+}

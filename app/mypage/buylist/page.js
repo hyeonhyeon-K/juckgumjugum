@@ -23,7 +23,7 @@ export default async function Buylist(){
     });
       // 적금의 email만 가져오고 있음
     return(
-        <div>
+        <div className="depositDiv">
             <BuyList result={mappedResult} resultY={resultY}/>
         </div>
     )

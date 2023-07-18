@@ -8,6 +8,7 @@ import React from "react"
 import Link from "next/link.js";
 import Image from "next/image"
 import frame1 from "../public/Frame1.png"
+import styles from "./component/HomeCard.module.css"
 
 export const revalidate = 60;
 
@@ -35,27 +36,27 @@ export default async function Home(){
   let sessions = await getServerSession(authOptions)
 
   return(
-    <div className="homediv">
-      <Image src={frame1} width={660} height={200} alt={'benner'}  loading="lazy" className="benner"/>
+    <div className={styles.homediv}>
+      <Image src={frame1} width={660} height={200} alt={'benner'}  loading="lazy" className={styles.benner}/>
       <div>
-      <div className="subtitleBox">
+      <div className={styles.subtitleBox}>
         <Link href={'./deposit'} className="text-decoration">
-          <div className="subTitleFont"> 적금 </div>
-          <FaAngleRight className="subTitleIcon"/>
+          <div className={styles.subTitleFont}> 적금 </div>
+          <FaAngleRight className={styles.subTitleIcon}/>
         </Link>
       </div>
-      <div className="mainBox">
+      <div className={styles.mainBox}>
         <HomeCard result={mappedResult}/>
       </div>
       
 
-      <div className="subtitleBox">
+      <div className={styles.subtitleBox}>
         <Link href={'./deposity'} className="text-decoration">
-          <div className="subTitleFont"> 예금 </div>
-          <FaAngleRight className="subTitleIcon"/>
+          <div className={styles.subTitleFont}> 예금 </div>
+          <FaAngleRight className={styles.subTitleIcon}/>
         </Link>
       </div>
-      <div className="mainBox">
+      <div className={styles.mainBox}>
         <HomeCardY resultY={mappedResultY}/>
       </div>
 

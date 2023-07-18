@@ -51,7 +51,7 @@ export default async function deposit(){
 // console.log(api.data.result.baseList[0])  
 
     return(
-        <div>
+        <div className="depositDiv">
             <Expalne/>
             <DayDeposit resultYG={mappedResultYG}/>
                 <div className="depositBoxss">

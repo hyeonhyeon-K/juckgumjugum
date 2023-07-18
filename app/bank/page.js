@@ -34,7 +34,7 @@ export default async function depostidetail(){
     }, []);
 
     return(
-        <div>
+        <div className="depositDiv">
             <BankBenner/>
             <BankProduct filterTitle={filterTitle}/>
         </div>
