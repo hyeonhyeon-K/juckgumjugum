@@ -25,7 +25,6 @@ export default function Home(props){
 
   const datamap = modifiedResult.slice(0, 3).map((a,i) => (
     <div className="body" key={i}>
-      <div className="MainContentBox" />
       <div className="subTitle">
         {/* 여기서부터 map */}
         <Link href={`/detaily/${modifiedResult[i]._id}`} className='text-decoration'>
@@ -33,7 +32,7 @@ export default function Home(props){
           <FaAngleRight className="subTitleIcon"/> */}
           <div className="card">
             <div className="body">
-              <div className="MainContentBox" />
+
                 <div className="subTitle">
                   <div className="productCard">
                   <div className="productHeader">

@@ -35,7 +35,7 @@ export default async function Home(){
   let sessions = await getServerSession(authOptions)
 
   return(
-    <div>
+    <div className="homediv">
       <Image src={frame1} width={660} height={200} alt={'benner'}  loading="lazy" className="benner"/>
       <div>
       <div className="subtitleBox">
