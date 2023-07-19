@@ -8,7 +8,7 @@ import Header from "./Header"
 import SingInHeader from "./SingInHeader"
 import { Analytics } from '@vercel/analytics/react';
 import frame from '../public/Frame1.png'
-import styles from './component/HomeCard.module.css'
+// import styles from './component/HomeCard.module.css'
 
 export const metadata = {
   title: '적금저금',
@@ -32,7 +32,7 @@ export const metadata = {
   ogDescription: '적금과 예금을 공유하고 은행 상품을 보세요!',
   ogImage: { frame },
   naverSiteVerification: 'b82e83b5369adc93c5ed599e3c629ddef2b50995.html',
-  viewport: 'width=425px, initial-scale=0.8'
+  viewport: 'width=425px, initial-scale=1'
 };
 
 
@@ -43,7 +43,7 @@ export default async function header({children}){
   return(
     <html lang="en">
     <body >
-      <div className={styles.headerdiv}>
+      <div className="headerdiv">
         { session ?<SingInHeader>
         </SingInHeader>  :<Header>
         </Header> }

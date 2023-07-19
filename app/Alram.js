@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useEffect, useState} from "react"
-import styles from './component/HomeCard.module.css'
+// import styles from './component/'
 
 
 
@@ -16,12 +16,12 @@ export default function Header(){
         <div>
             {
               alert === true ? (
-                <div className={styles.alramDiv}>
-                <div className={styles.alramBody}>
-                    <div className={styles.alramHeader}>
-                        <div className={styles.alramTitle}>알림</div>
+                <div className="alramDiv">
+                <div className="alramBody">
+                    <div className="alramHeader">
+                        <div className="alramTitle">알림</div>
                     </div>
-                    <div className={styles.alramContent}>
+                    <div className="alramContent">
                         <p>반가워요! 로그인 후 글을 작성해  보시겠어요? </p>
                     </div>
                 </div>
