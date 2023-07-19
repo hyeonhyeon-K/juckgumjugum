@@ -17,7 +17,6 @@
 }
 .headerdiv{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
@@ -171,6 +170,7 @@
     width: 960px;
     margin-top: 10px;
     background-color:#D9D9D9;
+    border-radius: 20px;
   }
   @media only screen and (max-width: 425px) {
     .benner{
@@ -257,7 +257,8 @@
     box-sizing: border-box;
     width: 245px;
     height: 250px;
-    margin-top: 8%;
+    margin-top: 3%;
+    margin-left: 5%;
     background-color: #ffffff;
     border: 1px solid #969696;
     border-radius: 10px;
@@ -660,8 +661,8 @@
   }
   .depositBody{
     display: flex;
-    margin: 0px 0px 0px 70px;
     height: 280px;
+    margin-left: 10%;
   }
   .expalnebox{
     display: flex;
@@ -669,7 +670,7 @@
     height: 190px;
     width: 980px;
     margin-top: 20px;
-    margin-left: 170px;
+    margin-left: 5%;
     border-radius: 20px;
     background-color: #2649FF;
   }
@@ -725,7 +726,7 @@
     display: flex;
     align-items: center;
     width: auto;
-    margin: 30px 0px 10px 170px;
+    margin: 1% 0px 1% 7%;
     font-size: 33px;
     font-weight: 600;
     
@@ -740,15 +741,16 @@
   }
   .explaneSubTitle{
     height: 280px;
-    margin-left: 20px;
+    margin-left: 10%;
   }
   .depositBoxss{
     display: flex;
-    margin-left:44px;
+    margin-left:1%;
   }
   .depositBox1{
     display: flex;
     text-decoration: none;
+    margin-right: 10%;
   }
   .depositBox2{
     display: flex;
@@ -759,7 +761,7 @@
   }
   .depositdetailbox{
     display: flex;
-    margin: 30px 0px 0px 200px;
+    margin: 3% 0% 0% 7%;
   }
   .depositdetailboxS{
       display: flex;
@@ -869,9 +871,17 @@
   }
   .deposit3dbox{
       width: 950px;
-      margin: 30px 0px 0px 180px;
+      margin: 3% 0px 0px 4%;
       border: solid 1px #969696;
       border-radius: 15px;
+  }
+  @media only screen and (max-width: 425px) {
+    .deposit3dbox{
+      width: 370px;
+      margin: 3% 0px 0px 4%;
+      border: solid 1px #969696;
+      border-radius: 15px;
+  }
   }
   .deposit3dImgbox{
       display: flex;
@@ -881,6 +891,14 @@
       margin: 40px 0px 0px 30px;
       border-radius: 100px;
   }
+  @media only screen and (max-width: 425px) {
+    .deposit3dimg{
+      border-radius: 100px;
+      width: 90px;
+      height: 90px;
+      margin: 10px 0px 0px 0px;
+  }
+  }
   .deposit3dBox1{
       display: flex;
       margin: 0px 0px 0px 40px;
@@ -889,6 +907,13 @@
       display: flex;
       flex-direction: column;
       margin: 30px 0px 0px 70px;
+  }
+  @media only screen and (max-width: 425px) {
+    .deposit3dBox2{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px 0px 10px;
+  }
   }
   .d3d{
       display: flex;
@@ -903,6 +928,20 @@
       border-radius: 10px;
       border: solid 1px rgba(0, 0, 0, 0);
   }
+  @media only screen and (max-width: 425px) {
+    .deposit3dButton{
+      display: block;
+      height: 30px;
+      width: auto;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+      color: #FFFFFF;
+      background-color: #2649FF;
+      border-radius: 5px;
+      border: solid 1px rgba(0, 0, 0, 0);
+  }
+  }
   .deposit3dButton1{
       display: block;
       height: 40px;
@@ -914,20 +953,56 @@
       border-radius: 10px;
       border: solid 1px rgba(0, 0, 0, 0);
   }
+  @media only screen and (max-width: 425px) {
+    .deposit3dButton1{
+      display: block;
+      height: 30px;
+      margin-top: 20px;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #FFFFFF;
+      background-color: #2649FF;
+      border-radius: 5px;
+      border: solid 1px rgba(0, 0, 0, 0);
+  }
+  }
+
   .d3dB{
       display: flex;
       margin-top: 13px;
+  }
+  @media only screen and (max-width: 425px) {
+    .d3dB{
+      display: flex;
+      margin-top: 17px;
+      margin-left: -120px;
+  }
   }
   .d3dBT{
       font-size: 45px;
       font-weight: 600;
       margin-top: 10px;
   }
+  @media only screen and (max-width: 425px) {
+    .d3dBT{
+      font-size: 37px;
+      font-weight: 700;
+      margin-top: 30px;
+  }
+}
   .d3dBTd{
       display: flex;
       flex-direction: column;
       margin: 10px 0px 0px 10px
   }
+  @media only screen and (max-width: 425px) {
+    .d3dBTd{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px 0px 10px
+  }
+}
   .d3dBTdT{
       display: flex;
       margin-left: 45px;
@@ -935,30 +1010,66 @@
       font-weight: 700;
       color: #2649FF;
   }
+  @media only screen and (max-width: 425px) {
+    .d3dBTdT{
+      display: flex;
+      margin-left: 50px;
+      margin-top: 25px;
+      font-size: 44px;
+      font-weight: 700;
+      color: #2649FF;
+  }
+}
   .d3dBTdT1{
       font-size: 10px;
   }
+  @media only screen and (max-width: 425px) {
+    .d3dBTdT1{
+      font-size: 10px;
+      margin-top: 10px;
+  }
+}
   .d3dBTdT2{
       font-size: 40px;
       font-weight: 500;
       color: #2649FF;
   }
+  @media only screen and (max-width: 425px) {
+    .d3dBTdT2{
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 1px;
+      color: #2649FF;
+  }
+}
   .d3dBTI{
       margin: 10px 0px 0px 0px;
       color: #969696;
   }
+  @media only screen and (max-width: 425px) {
+    .d3dBTI{
+      margin: 30px 0px 0px 10px;
+      color: #969696;
+      font-size: 13px;
+  }
+}
   .d3dBTID{
       margin-left: 12px;
       font-size: 13px;
   }
   .d3dbD{
-      width: 550px;
-      font-size: 30px;
+    margin-left: -120px;
+      font-size: 20px;
       color: #585858;
   }
   .deposit3dID{
       margin: 30px 0px 0px 30px;
   }
+  @media only screen and (max-width: 425px) {
+    .deposit3dID{
+      margin: 5px 0px 0px 17px;
+  }
+}
   .deposit3dIDT{
       font-size: 35px;
       font-weight: 400;
@@ -969,6 +1080,14 @@
       font-size: 30px;
       color: #585858;
   }
+  @media only screen and (max-width: 425px) {
+    .deposit3dIDC{
+      margin: 10px 0px 0px 17px;
+      width: 300px;
+      font-size: 15px;
+      color: #585858;
+  }
+}
   .deposit3dII{
       width: 730px;
       margin: 20px 0px 0px 110px;
@@ -977,9 +1096,25 @@
       letter-spacing: 1px;
       line-height:30px;
   }
+  @media only screen and (max-width: 425px) {
+  .deposit3dII{
+    width: 330px;
+    margin: 0px 0px 0px 20px;
+    font-size: 13px;
+    color: #969696;
+    letter-spacing: 1px;
+    line-height:20px;
+}
+}
   .deposit3DBB{
       display: flex;
-      margin: 20px 0px 0px 940px;
+      margin: 2% 0% 0% 83%;
+  }
+  @media only screen and (max-width: 425px) {
+    .deposit3DBB{
+      display: flex;
+      margin: 2% 0% 0% 45%;
+  }
   }
   .deposit3DB{
       display: block;
