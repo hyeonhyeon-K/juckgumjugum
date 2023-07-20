@@ -40,6 +40,13 @@
     flex-direction: column;
     }
   }
+  @media only screen and (max-width: 425px) {
+    .headerdivs{
+    display: flex;
+    width: 425px;
+    flex-direction: column;
+    }
+  }
   .headerbox{
     display: flex;
     align-items: center;
@@ -117,7 +124,8 @@
       flex-grow: 0;
       font-size: 17px;
       color: #707070;
-      margin-right: 100px;
+      margin-right: 0px;
+      margin-left: 160px;
     }
   }
   .loginBox{
@@ -131,7 +139,7 @@
   }
   @media only screen and (max-width: 425px) {
     .loginBox{
-      margin-left: 10px;
+      margin-left: 0px;
     }
   }
   .headerMenu{
@@ -239,9 +247,9 @@
   @media only screen and (max-width: 425px) {
     .benner{
       height: 140px;
-      width: 340px;
+      width: 400px;
       margin-top: 10px;
-      margin-left: 10px;
+      margin-left: 3%;
       margin-bottom: 10px;
       background-color:#D9D9D9;
     }
@@ -262,7 +270,7 @@
   }
   @media only screen and (max-width: 425px) {
     .subTitle{
-      margin-left: 5px;
+      margin-left: 8px;
       height: 100px;
     }
   }
@@ -320,6 +328,7 @@
     .subtitleBox{
       display: flex;
       align-items: center;
+      margin-top: 0px;
       margin-left: 20px;
     }
   }
@@ -765,7 +774,7 @@
   @media only screen and (max-width: 425px) {
     .depositBody{
       display: flex;
-      height: 170px;
+      height: 160px;
       margin-left: 10%;
     }
   }
@@ -784,9 +793,9 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-    text-overflow: ellipsis;
+      text-overflow: ellipsis;
       -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+      -webkit-box-orient: vertical;
       height: 190px;
       width: 750px;
       margin-top: 20px;
@@ -797,10 +806,16 @@
   }
   @media only screen and (max-width: 425px) {
     .expalnebox{
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       height: 70%;
-      width: 300px;
+      width: 400px;
       margin-top: 20px;
-      margin-left: 7px;
+      margin-left: 3%;
       border-radius: 20px;
       background-color: #2649FF;
     }
@@ -833,11 +848,11 @@
   @media only screen and (max-width: 970px) {
     #explaneContent{
       display:-webkit-box;
-      width: 650px;
       overflow: hidden;
-    text-overflow: ellipsis;
+      text-overflow: ellipsis;
       -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+      -webkit-box-orient: vertical;
+      width: 650px;
       font-size: 25px;
       font-weight: 400;
       line-height: 33px;
@@ -847,8 +862,12 @@
   }
   @media only screen and (max-width: 425px) {
     #explaneContent{
-      display: inline-flex;
-      width: auto;
+      display:-webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      width: 370px;
       font-size: 20px;
       font-weight: 500;
       line-height: 25px;
@@ -865,7 +884,16 @@
     margin: 1% 0px 1% 7%;
     font-size: 33px;
     font-weight: 600;
-    
+  }
+  @media only screen and (max-width: 425px) {
+    .dayDepositBox{
+      display: flex;
+      align-items: center;
+      width: auto;
+      margin: 1% 0px 0% 7%;
+      font-size: 25px;
+      font-weight: 600;
+    }
   }
   .cardSub{
     margin-left: 30px;
@@ -923,7 +951,7 @@
     .depositdetailbox{
       display: flex;
       flex-direction: column;
-      margin: 1% 0% 0% 7%;
+      margin: 1% 0% 0% 2.5%;
     }
   }
   .depositdetailboxS{
@@ -937,8 +965,9 @@
   @media only screen and (max-width: 425px) {
     .depositdetailboxS{
       display: flex;
-      width: 290px;
-      height: 100px;
+      margin-left: 4%;
+      width: 370px;
+      height: 110px;
       padding: 0px;
       border: solid 1px #969696;
       border-radius: 10px;
@@ -1097,7 +1126,7 @@
       margin-top: 5px;
       font-size: 18px;
       color: #585858;
-      width: 230px;
+      width: 280px;
       overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1179,7 +1208,7 @@
       font-size: 14px;
       font-weight: 600;
       margin-top: 5px;
-      margin-left: 40px;
+      margin-left: 85px;
       text-decoration: none;
       border-color: rgba(0, 0, 0, 0);
       border-radius: 5px;
@@ -1203,8 +1232,8 @@
   }
   @media only screen and (max-width: 425px) {
     .deposit3dbox{
-      width: 292px;
-      margin: 3% 0px 0px 2%;
+      width: 390px;
+      margin: 3% 0px 0px 3.5%;
       border: solid 1px #969696;
       border-radius: 15px;
   }
@@ -1240,7 +1269,8 @@
   @media only screen and (max-width: 425px) {
     .deposit3dBox1{
       display: flex;
-      margin: 0px 0px 0px 10px;
+      justify-content: center;
+      margin: 0px 0px 0px 0px;
   }
   }
   .deposit3dBox2{
@@ -1427,7 +1457,7 @@
 }
   @media only screen and (max-width: 425px) {
     .deposit3dID{
-      margin: 5px 0px 0px 17px;
+      margin: 5px 0px 0px 50px;
   }
 }
   .deposit3dIDT{
@@ -1463,7 +1493,7 @@
   @media only screen and (max-width: 425px) {
     .deposit3dIDC{
       margin: 10px 0px 0px 17px;
-      width: 240px;
+      width: 300px;
       font-size: 12px;
       color: #585858;
   }
@@ -1478,8 +1508,8 @@
   }
   @media only screen and (max-width: 425px) {
   .deposit3dII{
-    width: 280px;
-    margin: 0px 0px 0px 20px;
+    width: 300px;
+    margin: 0px 0px 0px 55px;
     font-size: 10px;
     color: #969696;
     letter-spacing: 1px;
@@ -1853,7 +1883,7 @@
     display: grid;
     width: 425px;
     grid-template-columns: repeat(3,0fr);
-    margin-left: 0px;
+    margin-left: 3%;
     margin-bottom: 0px;
     height: 160px;
   }
@@ -2178,6 +2208,6 @@
   display: flex;
   height: 80px;
   flex-direction: column;
-  margin: 0px 0px 0px 35px
+  margin: 0px 0px 0px 50px
 }
 }
