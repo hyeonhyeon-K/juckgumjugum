@@ -33,11 +33,26 @@
       width: 425px;
     }
   }
+  @media only screen and (max-width: 970px) {
+    .headerdivs{
+      display: flex;
+    width: 768px;
+    flex-direction: column;
+    }
+  }
   .headerbox{
     display: flex;
     align-items: center;
     margin-top: 1.5%;
     margin-left: -70%;
+  }
+  @media only screen and (max-width: 970px) {
+    .headerbox{
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 10%;
+    }
   }
   @media only screen and (max-width: 425px) {
     .headerbox{
@@ -62,6 +77,15 @@
     color: #0060F1;
     margin: 0px
   }
+  @media only screen and (max-width: 970px) {
+    .title{
+      display: flex;
+      font-size: 37px;
+      font-weight: 600;
+      color: #0060F1;
+      margin: 0px
+    }
+  }
   @media only screen and (max-width: 425px) {
     .title{
       display: flex;
@@ -78,6 +102,15 @@
     color: #707070;
     margin-right: -40%;
   }
+  @media only screen and (max-width: 970px) {
+    .login{
+      display: inline-block;
+      flex-grow: 1;
+      font-size: 17px;
+      color: #707070;
+      margin-right: 0%;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .login{
       display: inline-block;
@@ -91,6 +124,11 @@
     float: right;
     margin-left: 10px;
   }
+  @media only screen and (max-width: 970px) {
+    .loginBox{
+      margin-left: 0px;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .loginBox{
       margin-left: 10px;
@@ -101,6 +139,15 @@
     position: relative;
     margin-left: -80%;
     height: 40px;
+  }
+  @media only screen and (max-width: 970px) {
+    .headerMenu{
+      display: flex;
+      position: relative;
+      margin-right: 0%;
+      margin-left: 0%;
+      height: 40px;
+    }
   }
   @media only screen and (max-width: 425px) {
     .headerMenu{
@@ -159,6 +206,13 @@
     display: inline-flex;
     height: 280px;
   }
+  @media only screen and (max-width: 970px) {
+    .body{
+      display: inline-flex;
+      height: 260px;
+      margin-left: 3%;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .body{
       display: inline-flex;
@@ -171,6 +225,16 @@
     margin-top: 10px;
     background-color:#D9D9D9;
     border-radius: 20px;
+  }
+  @media only screen and (max-width: 970px) {
+    .benner{
+      height: 240px;
+      width: 750px;
+      margin-top: 10px;
+      margin-left: 3%;
+      margin-bottom: 10px;
+      background-color:#D9D9D9;
+    }
   }
   @media only screen and (max-width: 425px) {
     .benner{
@@ -188,14 +252,13 @@
     margin-top: 10px;
     background-color:#D9D9D9;
   }
-  @media only screen and (max-width: 425px) {
-    .subTitle{
-      margin-left: 5px;
-      height: 100px;
-    }
-  }
   .subTitle{
     margin-left: 28px;
+  }
+  @media only screen and (max-width: 970px) {
+    .subTitle{
+      margin-left: 10%;
+    }
   }
   @media only screen and (max-width: 425px) {
     .subTitle{
@@ -245,6 +308,14 @@
     margin-top:10px;
     /* margin-left: 5%; */
   }
+  @media only screen and (max-width: 970px) {
+    .subtitleBox{
+      display: flex;
+      align-items: center;
+      margin-top:10px;
+      margin-left: 3%;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .subtitleBox{
       display: flex;
@@ -262,6 +333,19 @@
     background-color: #ffffff;
     border: 1px solid #969696;
     border-radius: 10px;
+  }
+  @media only screen and (max-width: 970px) {
+    .productCard{
+      display: block;
+      box-sizing: border-box;
+      width: 200px;
+      height: 250px;
+      margin-top: 3%;
+      margin-left: 0%;
+      background-color: #ffffff;
+      border: 1px solid #969696;
+      border-radius: 10px;
+    }
   }
   @media only screen and (max-width: 425px) {
     .productCard{
@@ -457,6 +541,18 @@
     align-items: center;
     padding-bottom: 10px;
   }
+  @media only screen and (max-width: 970px) {
+    .productEx{
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      margin-left: 10px;
+      font-size: 13px;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .productEx{
       display: flex;
@@ -476,6 +572,7 @@
     font-size: 15px;
     color: #BAB9B9;
   }
+  
   @media only screen and (max-width: 425px) {
     .productExM{
       margin-top: 0px;
@@ -682,12 +779,28 @@
     border-radius: 20px;
     background-color: #2649FF;
   }
+  @media only screen and (max-width: 970px) {
+    .expalnebox{
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+      height: 190px;
+      width: 750px;
+      margin-top: 20px;
+      margin-left: 5%;
+      border-radius: 20px;
+      background-color: #2649FF;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .expalnebox{
-      height: 90%;
-      width: 90%;
+      height: 70%;
+      width: 300px;
       margin-top: 20px;
-      margin-left: 10px;
+      margin-left: 7px;
       border-radius: 20px;
       background-color: #2649FF;
     }
@@ -716,6 +829,21 @@
     line-height: 33px;
     margin: 15px 0px 0px 40px;
     color: #FFFFFF;
+  }
+  @media only screen and (max-width: 970px) {
+    #explaneContent{
+      display:-webkit-box;
+      width: 650px;
+      overflow: hidden;
+    text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 33px;
+      margin: 15px 0px 0px 40px;
+      color: #FFFFFF;
+    }
   }
   @media only screen and (max-width: 425px) {
     #explaneContent{
@@ -764,7 +892,7 @@
   .depositBox1{
     display: flex;
     text-decoration: none;
-    margin-right: 10%;
+    margin-right: 6%;
   }
   @media only screen and (max-width: 425px) {
     .depositBox1{
@@ -784,6 +912,13 @@
     display: flex;
     margin: 3% 0% 0% 7%;
   }
+  @media only screen and (max-width: 970px) {
+    .depositdetailbox{
+      display: flex;
+      flex-direction: column;
+      margin: 1% 0% 0% 7%;
+    }
+  }
   @media only screen and (max-width: 425px) {
     .depositdetailbox{
       display: flex;
@@ -802,7 +937,7 @@
   @media only screen and (max-width: 425px) {
     .depositdetailboxS{
       display: flex;
-      width: 320px;
+      width: 290px;
       height: 100px;
       padding: 0px;
       border: solid 1px #969696;
@@ -995,6 +1130,14 @@
       justify-content: space-around;
       margin-left: 50px;
   }
+  @media only screen and (max-width: 970px) {
+    .depositdetailbuttonbox{
+      display: flex;
+      flex-direction: row;
+      margin-left: 0px;
+      justify-content: flex-start;
+  }
+  }
   @media only screen and (max-width: 425px) {
     .depositdetailbuttonbox{
       display: flex;
@@ -1013,6 +1156,21 @@
       border-radius: 5px;
       background-color: #2649FF;
       color:#ffffff;
+  }
+  @media only screen and (max-width: 970px) {
+    #depositdetailbuttonboxLink{
+      height: 34px;
+      width: 138px;
+      font-size: 23px;
+      font-weight: 600;
+      margin-top: 5px;
+      margin-left: 140px;
+      text-decoration: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      background-color: #2649FF;
+      color:#ffffff;
+  }
   }
   @media only screen and (max-width: 425px) {
     #depositdetailbuttonboxLink{
@@ -1035,10 +1193,18 @@
       border: solid 1px #969696;
       border-radius: 15px;
   }
+  @media only screen and (max-width: 970px) {
+    .deposit3dbox{
+      width: 710px;
+      margin: 3% 0px 0px 5%;
+      border: solid 1px #969696;
+      border-radius: 15px;
+  }
+  }
   @media only screen and (max-width: 425px) {
     .deposit3dbox{
-      width: 370px;
-      margin: 3% 0px 0px 4%;
+      width: 292px;
+      margin: 3% 0px 0px 2%;
       border: solid 1px #969696;
       border-radius: 15px;
   }
@@ -1051,17 +1217,31 @@
       margin: 40px 0px 0px 30px;
       border-radius: 100px;
   }
+  @media only screen and (max-width: 970px) {
+    .deposit3dimg{
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+      margin: 10px 0px 0px 0px;
+  }
+  }
   @media only screen and (max-width: 425px) {
     .deposit3dimg{
       border-radius: 100px;
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
       margin: 10px 0px 0px 0px;
   }
   }
   .deposit3dBox1{
       display: flex;
       margin: 0px 0px 0px 40px;
+  }
+  @media only screen and (max-width: 425px) {
+    .deposit3dBox1{
+      display: flex;
+      margin: 0px 0px 0px 10px;
+  }
   }
   .deposit3dBox2{
       display: flex;
@@ -1093,7 +1273,7 @@
       display: block;
       height: 30px;
       width: auto;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 500;
       margin-top: 20px;
       color: #FFFFFF;
@@ -1119,7 +1299,7 @@
       height: 30px;
       margin-top: 20px;
       margin-left: 10px;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 500;
       color: #FFFFFF;
       background-color: #2649FF;
@@ -1135,8 +1315,8 @@
   @media only screen and (max-width: 425px) {
     .d3dB{
       display: flex;
-      margin-top: 17px;
-      margin-left: -120px;
+      margin-top: 10px;
+      margin-left: -80px;
   }
   }
   .d3dBT{
@@ -1146,7 +1326,7 @@
   }
   @media only screen and (max-width: 425px) {
     .d3dBT{
-      font-size: 37px;
+      font-size: 25px;
       font-weight: 700;
       margin-top: 30px;
   }
@@ -1173,7 +1353,7 @@
   @media only screen and (max-width: 425px) {
     .d3dBTdT{
       display: flex;
-      margin-left: 50px;
+      margin-left: 20px;
       margin-top: 25px;
       font-size: 44px;
       font-weight: 700;
@@ -1218,13 +1398,33 @@
       font-size: 13px;
   }
   .d3dbD{
-    margin-left: -120px;
+    margin-left: 0px;
       font-size: 20px;
       color: #585858;
   }
+  @media only screen and (max-width: 970px) {
+    .d3dbD{
+      margin-left: 0px;
+        font-size: 20px;
+        color: #585858;
+    }
+}
+@media only screen and (max-width: 425px) {
+  .d3dbD{
+    width: 300px;
+    margin-left: -80px;
+      font-size: 17px;
+      color: #585858;
+  }
+}
   .deposit3dID{
       margin: 30px 0px 0px 30px;
   }
+  @media only screen and (max-width: 970px) {
+    .deposit3dID{
+      margin: 5px 0px 0px 17px;
+  }
+}
   @media only screen and (max-width: 425px) {
     .deposit3dID{
       margin: 5px 0px 0px 17px;
@@ -1234,17 +1434,37 @@
       font-size: 35px;
       font-weight: 400;
   }
+  @media only screen and (max-width: 970px) {
+    .deposit3dIDT{
+      font-size: 30px;
+      font-weight: 400;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .deposit3dIDT{
+    font-size: 20px;
+    font-weight: 400;
+}
+}
   .deposit3dIDC{
       width: 730px;
       margin: 20px 0px 0px 70px;
       font-size: 30px;
       color: #585858;
   }
+  @media only screen and (max-width: 970px) {
+    .deposit3dIDC{
+      margin: 1% 0% 0% 10%;
+      width: 600px;
+      font-size: 20px;
+      color: #585858;
+  }
+}
   @media only screen and (max-width: 425px) {
     .deposit3dIDC{
       margin: 10px 0px 0px 17px;
-      width: 300px;
-      font-size: 15px;
+      width: 240px;
+      font-size: 12px;
       color: #585858;
   }
 }
@@ -1258,9 +1478,9 @@
   }
   @media only screen and (max-width: 425px) {
   .deposit3dII{
-    width: 330px;
+    width: 280px;
     margin: 0px 0px 0px 20px;
-    font-size: 13px;
+    font-size: 10px;
     color: #969696;
     letter-spacing: 1px;
     line-height:20px;
@@ -1270,10 +1490,16 @@
       display: flex;
       margin: 2% 0% 0% 83%;
   }
+  @media only screen and (max-width: 970px) {
+    .deposit3DBB{
+      display: flex;
+      margin: 2% 0% 0% 73%;
+  }
+  }
   @media only screen and (max-width: 425px) {
     .deposit3DBB{
       display: flex;
-      margin: 2% 0% 0% 45%;
+      margin: 2% 0% 0% 25%;
   }
   }
   .deposit3DB{
@@ -1617,6 +1843,11 @@
   display: flex;
   margin-left: -3%;
 }
+@media only screen and (max-width: 970px) {
+  .mainBox{
+    display: flex;
+  }
+}
 @media only screen and (max-width: 425px) {
   .mainBox{
     display: grid;
@@ -1816,6 +2047,13 @@
   font-size: 17px;
   color: #BAB9B9; 
 }
+@media only screen and (max-width: 970px) {
+  .productExNum1{
+    margin-left: 0px;
+    font-size: 12px;
+    color: #BAB9B9; 
+  }
+}
 @media only screen and (max-width: 425px) {
   .productExNum1{
     margin-left: 10px;
@@ -1896,6 +2134,18 @@
 .contentbox{
   width: 490px;
 }
+@media only screen and (max-width: 970px) {
+  .depositDiv{
+    width: 750px;
+    height: 879px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .depositDiv{
+    width: 425px;
+    height: 879px;
+  }
+}
 @media only screen and (max-width: 425px) {
   .contentbox{
     width: 490px;
@@ -1906,10 +2156,16 @@
   display: flex;
   margin: 3% 0% 0% 19%
 }
+@media only screen and (max-width: 970px) {
+  .depositdetailboxapi{
+    display: flex;
+    margin: 3% 0% 0% 8%
+  }
+}
 @media only screen and (max-width: 425px) {
   .depositdetailboxapi{
     display: flex;
-    margin: 3% 0% 0% 9%
+    margin: 3% 0% 0% 2%
   }
 }
 .depositdetailcontent2{
@@ -1922,6 +2178,6 @@
   display: flex;
   height: 80px;
   flex-direction: column;
-  margin: 0px 0px 0px 45px
+  margin: 0px 0px 0px 35px
 }
 }
