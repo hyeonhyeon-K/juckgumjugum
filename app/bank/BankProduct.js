@@ -21,9 +21,9 @@ export default function BankProduct(props){
                         <div className='ddInfper'>%</div>
                     </div>
                 </div>
-                <div className='depositdetailcontent'>
+                <div className='depositdetailcontent2'>
                     <div className='ddcontentbuttonB'>
-                        <button className='ddcontentTag1'>{a.intr_rate_type_nm}</button>
+                        <button className='ddcontentTag'>{a.intr_rate_type_nm}</button>
                         <button className='ddcontentTag1'>{a.rsrv_type_nm}</button>
                     </div>
                     <div className='contentbox'>

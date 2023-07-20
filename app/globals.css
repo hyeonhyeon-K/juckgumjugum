@@ -354,6 +354,7 @@
   }
   @media only screen and (max-width: 425px) {
     .productSubTitle1{
+      display: none;
       font-size: 12px;
       color: #585858;
     }
@@ -664,6 +665,13 @@
     height: 280px;
     margin-left: 10%;
   }
+  @media only screen and (max-width: 425px) {
+    .depositBody{
+      display: flex;
+      height: 170px;
+      margin-left: 10%;
+    }
+  }
   .expalnebox{
     display: flex;
     flex-direction: column;
@@ -743,6 +751,12 @@
     height: 280px;
     margin-left: 10%;
   }
+  @media only screen and (max-width: 425px) {
+    .explaneSubTitle{
+      height: 280px;
+      margin-left: 0px;
+    }
+  }
   .depositBoxss{
     display: flex;
     margin-left:1%;
@@ -751,6 +765,13 @@
     display: flex;
     text-decoration: none;
     margin-right: 10%;
+  }
+  @media only screen and (max-width: 425px) {
+    .depositBox1{
+      display: flex;
+      text-decoration: none;
+      margin-right: 5%;
+    }
   }
   .depositBox2{
     display: flex;
@@ -763,6 +784,13 @@
     display: flex;
     margin: 3% 0% 0% 7%;
   }
+  @media only screen and (max-width: 425px) {
+    .depositdetailbox{
+      display: flex;
+      flex-direction: column;
+      margin: 1% 0% 0% 7%;
+    }
+  }
   .depositdetailboxS{
       display: flex;
       width: 650px;
@@ -771,13 +799,37 @@
       border: solid 1px #969696;
       border-radius: 10px;
   }
+  @media only screen and (max-width: 425px) {
+    .depositdetailboxS{
+      display: flex;
+      width: 320px;
+      height: 100px;
+      padding: 0px;
+      border: solid 1px #969696;
+      border-radius: 10px;
+  }
+  }
+  
   .depositdetailboxS1{
       margin-left: 20px;
       width: 115px;
   }
+  @media only screen and (max-width: 425px) {
+    .depositdetailboxS1{
+      margin-left: 20px;
+      width: 50px;
+  }
+  }
   .ddbs2{
       display: flex;
       margin-left: -10px;
+  }
+  @media only screen and (max-width: 425px) {
+    .ddbs2{
+      display: flex;
+      margin-left: -10px;
+      align-items: baseline;
+  }
   }
   .ddInfTitle{
       color:#969696;
@@ -789,16 +841,39 @@
       font-size: 55px;
       font-weight: 700;
   }
+  @media only screen and (max-width: 425px) {
+    .ddInfNum{
+      color: #3152FF;
+      font-size: 35px;
+      font-weight: 700;
+  }
+  }
   .ddInfper{
       color: #3152FF;
       font-size: 20px;
       font-weight: 400;
       margin: 29px 0px 0px 5px
   }
+  @media only screen and (max-width: 425px) {
+    .ddInfper{
+      color: #3152FF;
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0px 0px 0px 5px
+  }
+  }
   .depositdetailcontent{
       display: flex;
       flex-direction: column;
       margin: 0px 0px 0px 26px
+  }
+  @media only screen and (max-width: 425px) {
+    .depositdetailcontent{
+      display: flex;
+      height: 80px;
+      flex-direction: column;
+      margin: 0px 0px 0px 15px
+  }
   }
   .ddcontentbuttonB{
       display: flex;
@@ -807,13 +882,21 @@
   .ddI{
       border-radius: 60px;
   }
+  @media only screen and (max-width: 425px) {
+    .ddI{
+      margin-top: 20px;
+      border-radius: 60px;
+      height: 40px;
+      width: 40px;
+  }
+  }
   .ddcontentTag{
       height: 24px;
       text-align: center;
       font-size: 15px;
       font-weight: 400;
       border-color: rgba(0, 0, 0, 0);
-      border-radius: 15px;
+      border-radius: 10px;
       background-color: #0060F1;
       color:#ffffff;
   }
@@ -824,13 +907,45 @@
       font-size: 15px;
       font-weight: 400;
       border-color: rgba(0, 0, 0, 0);
-      border-radius: 15px;
+      border-radius: 10px;
       background-color: #0060F1;
       color:#ffffff;
+  }
+  @media only screen and (max-width: 425px) {
+    .ddcontentTag1{
+      height: 24px;
+      text-align: center;
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 10px;
+      background-color: #0060F1;
+      color:#ffffff;
+  }
+  }
+  @media only screen and (max-width: 425px) {
+    .ddcontentTag1{
+      height: 24px;
+      text-align: center;
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 10px;
+      background-color: #0060F1;
+      color:#ffffff;
+  }
   }
   .ddcontentTitle{
       font-size: 30px;
       font-weight: 600;
+  }
+  @media only screen and (max-width: 425px) {
+    .ddcontentTitle{
+      font-size: 20px;
+      font-weight: 600;
+  }
   }
   .ddcontentC{
       margin-top: 5px;
@@ -842,11 +957,33 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
+  @media only screen and (max-width: 425px) {
+    .ddcontentC{
+      margin-top: 5px;
+      font-size: 18px;
+      color: #585858;
+      width: 230px;
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  }
   .ddcontentInfbox{
       display: flex;
       color: #BAB9B9;
       margin: 0px 0px 0px 350px;
       font-size: 16px;
+  }
+  @media only screen and (max-width: 425px) {
+    .ddcontentInfbox{
+      display: flex;
+      color: #BAB9B9;
+      display: none;
+      margin: 0px 0px 0px 35px;
+      font-size: 16px;
+  }
   }
   .ddcontentInfboxSub{
     font-size: 15px;
@@ -858,6 +995,14 @@
       justify-content: space-around;
       margin-left: 50px;
   }
+  @media only screen and (max-width: 425px) {
+    .depositdetailbuttonbox{
+      display: flex;
+      flex-direction: row;
+      margin-left: 0px;
+      justify-content: flex-start;
+  }
+  }
   #depositdetailbuttonboxLink{
       height: 41px;
       width: 158px;
@@ -868,6 +1013,21 @@
       border-radius: 5px;
       background-color: #2649FF;
       color:#ffffff;
+  }
+  @media only screen and (max-width: 425px) {
+    #depositdetailbuttonboxLink{
+      height: 20px;
+      width: 80px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 5px;
+      margin-left: 40px;
+      text-decoration: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      background-color: #2649FF;
+      color:#ffffff;
+  }
   }
   .deposit3dbox{
       width: 950px;
@@ -1656,6 +1816,13 @@
   font-size: 17px;
   color: #BAB9B9; 
 }
+@media only screen and (max-width: 425px) {
+  .productExNum1{
+    margin-left: 10px;
+    font-size: 10.5px;
+    color: #BAB9B9; 
+  }
+}
 .text-decoration2{
   color: #000;
   text-decoration: none;
@@ -1727,10 +1894,34 @@
   padding: 5px;
 }
 .contentbox{
-  height: 89px;
   width: 490px;
+}
+@media only screen and (max-width: 425px) {
+  .contentbox{
+    width: 490px;
+    font-size: 10px;
+  }
 }
 .depositdetailboxapi{
   display: flex;
-  margin: 30px 0px 0px 310px;
+  margin: 3% 0% 0% 19%
+}
+@media only screen and (max-width: 425px) {
+  .depositdetailboxapi{
+    display: flex;
+    margin: 3% 0% 0% 9%
+  }
+}
+.depositdetailcontent2{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 26px
+}
+@media only screen and (max-width: 425px) {
+.depositdetailcontent2{
+  display: flex;
+  height: 80px;
+  flex-direction: column;
+  margin: 0px 0px 0px 45px
+}
 }
