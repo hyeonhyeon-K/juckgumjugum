@@ -14,7 +14,7 @@ export default function Header(){
 
  
     return(
-        <header>
+        <div className="headerdivs">
           <Alram/>
           <div className='headerbox'>
           <h1 className='title' onClick={()=>{router.push('/') }}>적금 저금 </h1>
@@ -32,7 +32,7 @@ export default function Header(){
                   <div id='headerMenuSearchBox'><FaSearch id="serchIcon"/></div>
                 </div> */}
             </div>
-        </header>
+        </div>
         
     )
 }
