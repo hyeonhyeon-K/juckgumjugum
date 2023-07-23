@@ -4,17 +4,16 @@
 import Image from 'next/image'
 import React from "react"
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import HomeCardstyles from './component/HomeCard.module.css'
 
 
 
-export default function Home(props){
-  // eslint-disable-next-line react/prop-types
-  const {result} = props;
+export default function Home({result}){
+  const mapData = result
 
 
-  const modifiedResult = result.map((item) => {
+  const modifiedResult = mapData.map((item) => {
     if (item.bank === '우리은행') {
       return { ...item, cuk: '60' };
     } else {
@@ -74,7 +73,7 @@ export default function Home(props){
     
   )
 }
-Home.propTypes = {
-  result: PropTypes.array.isRequired,
+// Home.propTypes = {
+//   result: PropTypes.array.isRequired,
   
-};
+// };

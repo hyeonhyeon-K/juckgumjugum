@@ -4,15 +4,15 @@
 import Image from 'next/image'
 import React from "react"
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 
-export default function Home(props){
+export default function Home({resultY}){
   // eslint-disable-next-line react/prop-types
-  const {resultY} = props;
+  const yMapData = resultY;
+  console.log(yMapData)
 
-
-  const modifiedResult = resultY.map((item) => {
+  const modifiedResult = yMapData.map((item) => {
     if (item.bank === '우리은행') {
       return { ...item, cuk: '60' };
     } else {
@@ -72,6 +72,6 @@ export default function Home(props){
     
   )
 }
-Home.propTypes = {
-  resultY: PropTypes.array.isRequired,
-};
+// Home.propTypes = {
+//   resultY: PropTypes.array.isRequired,
+// };
