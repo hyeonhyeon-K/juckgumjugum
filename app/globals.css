@@ -1216,11 +1216,11 @@
       color:#ffffff;
   }
   }
-  .deposit3dbox{
-      width: 950px;
-      margin: 3% 0px 0px 4%;
-      border: solid 1px #969696;
-      border-radius: 15px;
+.deposit3dbox{
+    width: 930px;
+    margin: 3% 0 0 5%;
+    border: 1px solid #969696;
+    border-radius: 15px;
   }
   @media only screen and (max-width: 970px) {
     .deposit3dbox{
