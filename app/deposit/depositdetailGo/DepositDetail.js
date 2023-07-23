@@ -3,11 +3,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export default function DepositDetail(props){
     const {result, resultFF} = props;
-
     
   return(
     <>
@@ -54,7 +53,7 @@ export default function DepositDetail(props){
 </>
   )
 }
-DepositDetail.propTypes = {
-    result: PropTypes.string.isRequired,
-    resultFF: PropTypes.string.isRequired,
-  };
+// DepositDetail.propTypes = {
+//     result: PropTypes.string.isRequired,
+//     resultFF: PropTypes.string.isRequired,
+//   };

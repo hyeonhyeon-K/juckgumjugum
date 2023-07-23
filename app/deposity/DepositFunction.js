@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React from "react"
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Link from 'next/link'
 
 
@@ -51,7 +51,7 @@ export default function Homecard(props) {
   )
 }
 
-Homecard.propTypes = {
-  resultY: PropTypes.string.isRequired,
-  resultFF: PropTypes.string.isRequired,
-};
+// Homecard.propTypes = {
+//   resultY: PropTypes.string.isRequired,
+//   resultFF: PropTypes.string.isRequired,
+// };

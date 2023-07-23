@@ -15,5 +15,6 @@ module.exports = {
         "react"
     ],
     "rules": {
-    }
+    },
+    "react/prop-types": ["error", { "ignore": ["my_prop_key_that_uses_object_map"]}],
 }
