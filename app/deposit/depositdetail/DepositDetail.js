@@ -16,7 +16,7 @@ export default function DepositDetail(props){
                 <div className='depositdetailboxS'>
                     <Link href={`detail/${resultFF[i]}`} className='text-decoration'> 
                 <div className='depositdetailboxS1'>
-                <Image src={`/${a.bank}.png`} alt={'국민은행'} width="60" height="60" className='ddI'/>
+                <Image src={`/${a.bank}.png`} alt={'국민은행'} width="60" height="60" className='ddI' priority={true} />
                     <div className='ddInfTitle'>최고연</div>
                     <div className='ddbs2'>
                         <div className='ddInfNum'>{a.high}</div>

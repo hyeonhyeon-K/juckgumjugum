@@ -14,7 +14,7 @@ export default function BankProduct(props){
                 <div className='depositdetailboxS'>
                 <Link href={`/datailhana/${a.fin_prdt_nm}`} className='text-decoration'>
                 <div className='depositdetailboxS1'>
-                <Image src={`/${a.kor_co_nm}.png`} alt={'국민은행'} width="60" height="60" className='ddI'/>
+                <Image src={`/${a.kor_co_nm}.png`} alt={'국민은행'}  loading="lazy" width="60" height="60" className='ddI'/>
                     <div className='ddInfTitle'>최소 연</div>
                     <div className='ddbs2'>
                         <div className='ddInfNum'>{a.intr_rate2}</div>

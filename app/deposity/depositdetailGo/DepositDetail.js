@@ -15,7 +15,7 @@ export default function DepositDetail(resultYG){
                 <div className='depositdetailboxS'>
                 <Link href={`/detaily/${a._id}`} className='text-decoration'>
                 <div className='depositdetailboxS1'>
-                <Image src={`/${a.bank}.png`} alt={`/${DDmap[i].bank}.png`} width="60" height="60" className='ddI'/>
+                <Image src={`/${a.bank}.png`} alt={`/${DDmap[i].bank}.png`} width="60" height="60" className='ddI' priority={true}/>
                     <div className='ddInfTitle'>최고연</div>
                     <div className='ddbs2'>
                         <div className='ddInfNum'>{a.high}</div>

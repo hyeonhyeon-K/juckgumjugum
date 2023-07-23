@@ -20,7 +20,7 @@ export default function Homecard(props) {
             <div className="productCard">
               
             <div className="productHeader">
-              <Image src={`/${a.bank}.png`} alt={'국민은행'} width="50" height="50" className="productImg"/>
+              <Image src={`/${a.bank}.png`} alt={'국민은행'} width="50" height="50" className="productImg" priority={true} />
               <Link href={`detail/${resultFF[i]}`} className='text-decoration'><div className="productTitle">{a.title}</div></Link>
             </div>
             <div className="productSub">

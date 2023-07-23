@@ -44,7 +44,7 @@ export default async function detailehana(props){
             <div className="deposit3dBox1"> 
             
                 <div className="deposit3dImgbox">
-                <Image src={`/${detailhana.kor_co_nm}.png`} alt={`${detailhana.kor_co_nm}.png`} priority={true} width="180" height="180" className='deposit3dimg'/>
+                <Image src={`/${detailhana.kor_co_nm}.png`} alt={`${detailhana.kor_co_nm}.png`} priority={true}  width="180" height="180"  loading="lazy" className='deposit3dimg'/>
                 </div>
                 <div className="deposit3dBox2">
                     <div className="d3d">
