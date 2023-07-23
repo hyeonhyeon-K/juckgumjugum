@@ -38,7 +38,7 @@ export default function Home(props){
                 <div className="subTitle">
                   <div className="productCard">
                   <div className="productHeader">
-                    <Image src={`/${modifiedResult[i].bank}.png`} alt={`${modifiedResult[i].bank}`} width={`${modifiedResult[i].cuk}`} height={`${modifiedResult[i].cuk}`} className="productImg"/>
+                    <Image src={`/${modifiedResult[i].bank}.png`} alt={`${modifiedResult[i].bank}`} width={`${modifiedResult[i].cuk}`} height={`${modifiedResult[i].cuk}`} className="productImg"   priority={true}/>
                     <div className="productTitle">{modifiedResult[i].title}</div>
                   </div>
                   <div className="productSub">
