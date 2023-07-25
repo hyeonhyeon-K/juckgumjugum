@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function Home({resultY}){
   // eslint-disable-next-line react/prop-types
   const yMapData = resultY;
-  console.log(yMapData)
+
 
   const modifiedResult = yMapData.map((item) => {
     if (item.bank === '우리은행') {
