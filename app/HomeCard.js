@@ -4,15 +4,24 @@
 import Image from 'next/image'
 import React from "react"
 import Link from 'next/link';
-// import PropTypes from 'prop-types';
-// import HomeCardstyles from './component/HomeCard.module.css'
+// import { useSelector, useDispatch } from "react-redux";
+// import { addmongo } from "../redux/store";
+
+export default function Home({ result }) {
+  const mapData = result;
+
+//   const mongoState = useSelector((state) => state.mongo);
+//   const dispatch = useDispatch();
 
 
 
-export default function Home({result}){
-  const mapData = result
+//   useEffect(() => {
+//     // 컴포넌트가 처음 렌더링되었을 때 `handleMongoAdd` 함수를 실행
+//     dispatch(addmongo(mongoState,result));
+//   }, []);
 
-
+  
+// console.log(result)
   const modifiedResult = mapData.map((item) => {
     if (item.bank === '우리은행') {
       return { ...item, cuk: '60' };

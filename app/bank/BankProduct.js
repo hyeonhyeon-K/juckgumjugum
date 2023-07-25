@@ -3,9 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image';
 import React from "react"
 import PropTypes from 'prop-types';
+// import useGetUsersQuery from "../../redux/services/userApi"
+
 
 export default function BankProduct(props){
     const {filterTitle} = props;
+    // const { data, error, isLoading } = useGetUsersQuery('bulbasaur')
   return(
     <>
         {

@@ -4,13 +4,20 @@
 import Image from 'next/image'
 import React from "react"
 import Link from 'next/link';
+// import { useSelector } from "react-redux";
 // import PropTypes from 'prop-types';
 
 
 export default function Home({resultY}){
   // eslint-disable-next-line react/prop-types
   const yMapData = resultY;
-  console.log(yMapData)
+
+//   const mongoState = useSelector((state) => state);
+
+//   // mongo 스토어의 상태에는 result 데이터가 포함됨
+//   const resultData = mongoState;
+
+// console.log(resultData)
 
   const modifiedResult = yMapData.map((item) => {
     if (item.bank === '우리은행') {
