@@ -31,7 +31,6 @@ export const metadata = {
   ogTitle: '적금저금',
   ogDescription: '적금과 예금을 공유하고 은행 상품을 보세요!',
   ogImage: { frame },
-  naverSiteVerification: 'b82e83b5369adc93c5ed599e3c629ddef2b50995.html',
   viewport: 'width=425px, initial-scale=1'
 };
 
