@@ -3,7 +3,7 @@
 <br/>
 한줄 소개 : 실제 은행의 상품도 보고 사람들과 공유하고 싶은 적금과 예금을 공유해보세요!
 ### 배포
-배포 링크 : https://juckgum.com 
+배포 링크 : https://juckgum.com (현재 링크 삭제)
 ## 프로젝트 시연 영상
 https://youtu.be/jzgXqgv8tAc
 <br/>
